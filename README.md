@@ -37,7 +37,9 @@
 **Return:** θ
 
 
+![Example Image](NOVA1.png)
 
+Figure 1: MNIST and noisy MNIST.
 
 
 
