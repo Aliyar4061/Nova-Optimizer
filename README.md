@@ -182,6 +182,12 @@ This table provides a quick reference for understanding the trade-offs between c
 
 ---
 
+![Example Image](MNISTNOISY.png)
+
+Figure 1: MNIST and noisy MNIST.
+
+
+
 
 
 
