@@ -1,0 +1,1544 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[noblocks]{authblk}
+\usepackage{lipsum, babel}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{caption} 
+\usepackage{neuralnetwork}
+\usepackage{etoolbox} % for \ifnumcomp
+\usepackage{listofitems}
+\usepackage{colortbl}
+\usepackage[framemethod=TikZ]{mdframed} % For framed boxes
+\definecolor{teal}{RGB}{0, 128, 128}
+
+
+\usepackage{colortbl}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+
+\usepackage{mathpazo}
+\usepackage{etoolbox}
+%\usepackage[backref=true]{hyperref}
+
+
+%%%%%%%%Asli%%%%%%%5
+\usepackage{ragged2e}
+%\usepackage[backref]{hyperref}
+
+
+%\documentclass{article}
+%\usepackage[utf8]{inputenc}
+%\usepackage{caption}
+%\usepackage{booktabs}
+%\usepackage{array}
+%\usepackage{enumitem}
+\usepackage{resizegather}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{float}
+
+%% Define custom colors
+\definecolor{cardBackground}{HTML}{E1D7F4} % Light purple background
+\definecolor{cardFrame}{HTML}{6A0DAD}     % Dark purple frame
+\definecolor{tableHeader}{HTML}{9370DB}   % Medium purple for table headers
+
+
+
+
+
+\captionsetup[figure]{labelsep=period}
+\captionsetup[table]{labelsep=period}
+
+
+%\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{booktabs}
+
+
+\usepackage{amsmath} % for aligned
+\usepackage{listofitems} % for \readlist to create arrays
+\usetikzlibrary{arrows.meta} % for arrow size
+\usepackage[outline]{contour} % glow around text
+\contourlength{1.4pt}
+
+% COLORS
+%\usepackage{xcolor}
+%\usepackage{animate}
+%\usepackage{xsavebox}
+%\usepackage{callouts}
+\usepackage{amsfonts}
+\usepackage{pifont}
+\usepackage{subcaption}
+%\usepackage[table]{xcolor}
+%\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage[LGRgreek]{mathastext}
+\usepackage{multicol}
+\usepackage{pgffor}
+\usepackage{mathtools}
+\usepackage{authblk}
+\usepackage{tikz}
+\usetikzlibrary{shadings}
+\usepackage{xcolor}
+\usetikzlibrary{mindmap,trees}
+\usepackage{verbatim}
+\usepackage{fontspec}
+\setmainfont{Times New Roman} % Requires fontspec package and XeLaTeX/LuaLaTeX
+%\usepackage{mathptmx} 
+\usepackage{appendix}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+\usepackage[colorlinks=true, 
+                  linkcolor=cyan, 
+                  urlcolor=cyan, 
+                  citecolor=cyan, 
+                  anchorcolor=cyan,
+                   backref=true]{hyperref}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Customize the TOC link color (already set to cyan in the previous example)
+%\usepackage{hyperref}
+%\usepackage{xcolor}
+
+%\hypersetup{
+%    linktoc=all,  % Make all TOC entries clickable
+%    linkcolor=red,  % Set the TOC link color to blue
+%}
+
+
+%
+%\usepackage[colorlinks=true, 
+%                  linkcolor=cyan, 
+%                  urlcolor=cyan, 
+%                  citecolor=green
+%                  anchorcolor=cyan,
+%                   backref=true]{hyperref}
+%
+%
+%
+%
+%\hypersetup{
+%    linktoc=all,  % Make all TOC entries clickable
+%    linkcolor=cyan,  % Set the TOC link color to blue
+%}
+
+
+
+
+%% Custom command to create cyan-colored reference links
+%\newcommand{\ref}[2][cyan]{\hyperref[#2]{\color{#1}{\ref*{#2}}}}
+
+
+
+%
+%\documentclass{article}
+%\usepackage[table]{xcolor} % For coloring rows
+%\usepackage{booktabs} % For professional-looking tables
+%\usepackage{adjustbox} % For resizing tables
+%\usepackage{array} % For advanced column formatting
+%\usepackage[most]{tcolorbox} % For custom table styling
+
+
+% Define a tcolorbox style for the table
+\newtcbox{\mytable}[1][]{%
+    colback=white,
+    colframe=tableBorder,
+    arc=5pt, % Rounded corners
+    boxrule=1pt, % Border thickness
+    left=5pt, right=5pt, top=5pt, bottom=5pt, % Padding
+    #1
+}
+
+
+
+
+
+% Define a custom tcolorbox style
+\newtcolorbox{tablecard}[1][]{%
+    enhanced,
+    colback=lightgray!10,    % Light background color
+    colframe=teal!70,        % Frame color
+    arc=5mm,                 % Rounded corners
+    boxrule=1pt,             % Border thickness
+    drop shadow=teal!50,     % Shadow effect
+    title=\textbf{Layer-by-layer architecture details of the proposed method}, % Title
+    fonttitle=\bfseries,     % Bold title
+    #1                       % Allow additional options
+}
+
+
+
+
+
+\usepackage{import}
+\usepackage{listings}
+\usepackage{pythontex}
+\usepackage{algorithm}
+\usepackage{booktabs}
+\usepackage{algpseudocode}
+\usepackage{ifthen}
+\usepackage{makecell}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usetikzlibrary{matrix,positioning,fit,backgrounds,intersections}
+\usepackage{enumitem}
+
+
+%\usepackage[backref=true]{hyperref}
+
+
+\usepackage{listofitems} % for \readlist to create arrays
+\usetikzlibrary{arrows.meta} % for arrow size
+\usepackage[outline]{contour} % glow around text
+\contourlength{1.4pt}
+
+% COLORS
+\usepackage{xcolor}
+\colorlet{myred}{red!80!black}
+\colorlet{myblue}{blue!80!black}
+\colorlet{mygreen}{green!60!black}
+\colorlet{myorange}{orange!70!red!60!black}
+\colorlet{mydarkred}{red!30!black}
+\colorlet{mydarkblue}{blue!40!black}
+\colorlet{mydarkgreen}{green!30!black}
+
+
+
+% Define custom colors
+\definecolor{softblue}{HTML}{E0F7FA}
+\definecolor{softgreen}{HTML}{E8F5E9}
+\definecolor{softyellow}{HTML}{FFF9C4}
+\definecolor{softpurple}{HTML}{F3E5F5}
+\definecolor{softcyan}{HTML}{E0F7FA}
+\definecolor{softred}{HTML}{FFEBEE}
+\definecolor{softorange}{HTML}{FFE0B2}
+\definecolor{softteal}{HTML}{E0F2F1}
+
+
+% Define custom colors
+\definecolor{softpink}{HTML}{FFF0F5} % Soft pink background color
+\definecolor{softgreen}{HTML}{E8F5E9}
+\definecolor{softblue}{HTML}{E0F7FA}
+
+
+
+% Define custom colors
+\definecolor{softblue}{HTML}{E0F7FA}
+\definecolor{softgreen}{HTML}{E8F5E9}
+\definecolor{softyellow}{HTML}{FFF9C4}
+\definecolor{softpurple}{HTML}{F3E5F5}
+\definecolor{softcyan}{HTML}{E0F7FA}
+\definecolor{softred}{HTML}{FFEBEE}
+\definecolor{softorange}{HTML}{FFE0B2}
+\definecolor{softteal}{HTML}{E0F2F1}
+
+
+
+
+
+
+% Define custom colors
+% Define custom colors
+\definecolor{headerColor}{HTML}{4B0082}   % Dark purple for header
+\definecolor{rowColor}{HTML}{E8E8FF}      % Light lavender for alternating rows
+\definecolor{tableBorder}{HTML}{000000}   % Black for table borders (or choose any other color)
+% Define custom column types
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+
+
+
+
+% STYLES
+\tikzset{
+  >=latex, % for default LaTeX arrow head
+  node/.style={thick,circle,draw=myblue,minimum size=22,inner sep=0.5,outer sep=0.6},
+  node in/.style={node,green!20!black,draw=mygreen!30!black,fill=mygreen!25},
+  node hidden/.style={node,blue!20!black,draw=myblue!30!black,fill=myblue!20},
+  node convol/.style={node,orange!20!black,draw=myorange!30!black,fill=myorange!20},
+  node out/.style={node,red!20!black,draw=myred!30!black,fill=myred!20},
+  connect/.style={thick,mydarkblue}, %,line cap=round
+  connect arrow/.style={-{Latex[length=4,width=3.5]},thick,mydarkblue,shorten <=0.5,shorten >=1},
+  node 1/.style={node in}, % node styles, numbered for easy mapping with \nstyle
+  node 2/.style={node hidden},
+  node 3/.style={node out}
+}
+\def\nstyle{int(\lay<\Nnodlen?min(2,\lay):3)} % map layer number onto 1, 2, or 3
+% NEURAL NETWORK with coefficients, shifted
+
+
+%% Define custom colors
+%\definecolor{cardheader}{RGB}{255,107,107}
+%\definecolor{cardfooter}{RGB}{44,62,80}
+%\definecolor{mymagenta}{RGB}{248,215,255}
+%\definecolor{myorange}{RGB}{255,229,204}
+%\definecolor{mygreen}{RGB}{230,255,230}
+%\definecolor{mypurple}{RGB}{240,230,255}
+%\definecolor{myblue}{RGB}{230,243,255}
+%
+%% Custom itemize for tables
+%\newlist{tabitemize}{itemize}{1}
+%\setlist[tabitemize]{
+%    leftmargin=*,
+%    nosep,
+%    label=\textcolor{cardheader}{\scriptsize$\blacksquare$},
+%    before=\begin{minipage}[t]{\linewidth},
+%    after=\end{minipage}
+%}
+
+
+\usepackage{algpseudocode}
+
+%\DeclareCaptionFormat{algo}{\colorbox{teal!50}{\parbox{\textwidth}{#1#2#3}}}
+%\captionsetup[algorithm]{format=algo}
+
+
+
+\usepackage{smartdiagram}
+
+
+\usepackage{blindtext}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{quotes, arrows.meta}
+\usetikzlibrary{shapes,arrows,positioning,shadows,backgrounds}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{fadings}
+ \usetikzlibrary{positioning, fit, arrows.meta, shapes}
+\usetikzlibrary{chains}
+% used to avoid putting the same thing several times...
+% Command \empt{var1}{var2}
+%\newcommand{\empt}[2]{$#1^{\langle #2 \rangle}$}
+\textwidth 15cm
+\textheight 21cm
+\addtolength{\hoffset}{-0.3cm}
+\oddsidemargin 0cm
+\evensidemargin 0cm
+\setcounter{page}{1}
+
+\date{}
+\usepackage{lscape} % provides `landscape' environment
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{makecell}
+%\usepackage{xcolor}
+%\usepackage[colorlinks]{hyperref}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+%\usepackage{minted}
+\usepackage{pstricks-add}
+\usepackage{pgf,tikz}
+\usepackage{hyperref}
+%\usepackage[pagebackref]{hyperref}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{xcolor}
+%\usepackage[colorlinks]{hyperref}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+%\usepackage{minted}
+\usepackage{pstricks-add}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+%\usepackage{authblk}
+\usepackage[multiple]{footmisc}
+\usepackage{bigfoot}
+
+
+\usepackage{resizegather}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\DeclareCaptionLabelFormat{AppendixTables}{ Appendix #2}
+
+
+% Define custom colors
+\definecolor{header}{HTML}{FFCCCB} % Light pink for headers
+\definecolor{inputLayer}{HTML}{FFD700} % Gold for input layer
+\definecolor{featureExtraction}{HTML}{90EE90} % Pale green for feature extraction
+\definecolor{similarityComp}{HTML}{ADD8E6} % Light blue for similarity computation
+\definecolor{totalParams}{HTML}{D8BFD8} % Thistle for total parameters
+
+
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+
+%\documentclass{article}
+%\usepackage[most]{tcolorbox}   % For the card environment
+%\usepackage{colortbl}          % For colored rows in tables
+%\usepackage{array}             % For custom column types
+%\usepackage{booktabs}          % For improved table rules
+%\usepackage{float}             % To use [H] for precise table placement
+%\usepackage{xcolor}            % For defining custom colors
+%\usepackage{enumitem}          % For fine control over lists
+%\usepackage{caption}           % For captioning tables
+
+% Define custom column types for table
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% (Optional) Define any custom colors you want:
+\definecolor{cardbg}{RGB}{250,250,250}       % light background for the card
+\definecolor{accent1}{RGB}{0,102,204}          % blue accent for borders/titles
+\definecolor{titlebg}{RGB}{255,255,255}         % title text color (if needed)
+
+
+
+
+% Define custom column types for the table
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Define appealing colors (feel free to adjust the HEX codes)
+\definecolor{cardbg}{HTML}{F5F5F5}       % A soft light gray background for the card
+\definecolor{accent1}{HTML}{4A90E2}       % A vibrant blue for borders and titles
+\definecolor{headerrow}{HTML}{A3D4F7}      % Light blue for header rows
+\definecolor{inputrow}{HTML}{FFDAB9}       % Warm peach for input layer rows
+\definecolor{featureRow}{HTML}{C1E1C1}     % Soft green for feature extraction layers
+\definecolor{similarityRow}{HTML}{E6D0FF}  % Gentle lavender for similarity computation layers
+\definecolor{totalRow}{HTML}{B0E0E6}       % Powder blue for the grand total row
+
+
+
+
+%\documentclass{article}
+%\usepackage[margin=1in]{geometry} % Set page margins
+%\usepackage{booktabs}             % Professional-quality tables
+%\usepackage{array}                % Advanced column formatting
+%\usepackage{amsmath}              % Mathematical symbols and equations
+%\usepackage{caption}              % Better caption formatting
+%\usepackage{xcolor}               % Colors for design
+%\usepackage{tcolorbox}            % For creating beautiful boxes
+\usepackage{lipsum}               % Dummy text (optional)
+
+% Define custom colors
+\definecolor{tablebg}{RGB}{245, 245, 245}   % Light gray background
+\definecolor{headercolor}{RGB}{66, 133, 244} % Blue header color
+\definecolor{bordercolor}{RGB}{0, 0, 0}     % Black border
+% Define teal color for table and figure numbers
+\definecolor{cyan}{RGB}{0,255,255} % Pure cyan color
+
+
+% Create a styled box for the table
+\tcbset{
+    cardstyle/.style={
+        colback=tablebg,          % Background color
+        colframe=bordercolor,     % Border color
+        arc=5pt,                  % Rounded corners
+        boxrule=1pt,              % Border thickness
+        left=5mm, right=5mm, top=5mm, bottom=5mm, % Padding
+        title filled=true,        % Fill the title area
+        coltitle=white,           % Title text color
+        fonttitle=\bfseries,      % Title font style
+        center title              % Center the title
+    }
+}
+
+
+
+% Redefine the \figurename command to include color
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\makeatletter
+%\renewcommand{\fnum@figure}{Figure.~\thefigure}
+%\makeatother
+%
+%
+%
+%
+%% Define macros for Figure and Figures with cyan color
+%\newcommand{\figref}[1]{\textcolor{cyan}{Fig.~\ref{#1}}}% For singular Figure % For singular Figure
+%
+%\newcommand{\tabref}[1]{\textcolor{cyan}{Table~\ref{#1}}}
+%
+\makeatletter
+\renewcommand{\fnum@figure}{Fig~\thefigure}
+\makeatother
+%
+%
+%
+%%
+% Define macros for Figure and Figures with cyan color
+\newcommand{\figref}[1]{\textcolor{cyan}{Fig.~\ref{#1}}}% For singular Figure % For singular Figure
+
+\newcommand{\tabref}[1]{\textcolor{cyan}{Table~\ref{#1}}}
+
+
+
+%\newcommand{\OnlineRef}[2]{Section~#1 of Online Resource~#2}
+%
+%\newcommand{\OnlineRef}[2]{Section~#1 of Online Resource~#1}
+%
+\usepackage{xcolor}
+
+
+%%\newcommand{\OnlineRef}[2]{%
+%%  Sections~%
+%%  \textcolor{cyan}{2, 3} and \textcolor{cyan}{4}%
+%%  ~of Online Resource~\textcolor{cyan}{#2}%
+%%}
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\newcommand{\OnlineRefe}[2]{Section~\textcolor{cyan}{#1} ~of~Online Resource~ \textcolor{cyan}{#2}}
+
+\newcommand{\OnlineRef}[2]{%
+  Sections~%
+  \textcolor{cyan}{2, 3} and \textcolor{cyan}{4}%
+  ~of Online Resource~\textcolor{cyan}{#2}%
+}
+
+\newcommand{\OnlineReff}[2]{%
+  Sections~%
+  \textcolor{cyan}{5, 6} and \textcolor{cyan}{7}%
+  ~of Online Resource~\textcolor{cyan}{#2}%
+}
+
+\title{\bf{Nova: A Novel Optimizer Integrating Nesterov Momentum, AMSGrad, and Decoupled Weight Decay for Deep Learning
+}}
+
+
+
+\author{
+ \begin{tabular}{rl}
+  {\bf Ali Zeydi Abdian}\thanks{Ali Zeydi Abdian, Department of Computer Science, Shahid Bahonar University of Kerman, Kerman, Iran,   E-mail: \texttt{alizeydiabdian@math.uk.ac.ir, azeydiabdi@gmail.com}}.  {\bf Mohammad Masoud Javidi}\thanks{Mohammad Masoud Javidi, Professor, Faculty of Shahid Bahonar University of Kerman, Kerman, Iran,  Email: \texttt{javidi@uk.ac.ir}}.  {\bf Najme Mansouri}\thanks{Najme Mansouri, Associate Professor, Faculty of Shahid Bahonar University of Kerman, Kerman, Iran, Email: \texttt{n.mansouri@uk.ac.ir, najme.mansouri@gmail.com}, Box No. 76135-133, Fax: 03412111865}
+\end{tabular}
+}
+
+\begin{document}
+
+
+
+
+
+
+
+
+
+\maketitle
+
+
+
+
+\begin{abstract}
+The choice of optimization algorithm significantly impacts deep learning model performance, affecting convergence speed, generalization, and training stability. Existing optimizers, such as Adam, AMSGrad, and AdamW, face significant limitations that hinder their effectiveness across diverse deep learning tasks and architectures. These include suboptimal momentum utilization, stalled training due to vanishing learning rates, and compromised generalization with weight decay. To address these critical challenges, we propose Nova, a novel hybrid optimizer that synergistically integrates Nesterov momentum, AMSGrad’s non-decreasing second moment estimate, and decoupled weight decay. Nova introduces a pioneering integration of established techniques, distinguishing it from prior optimizers. Beyond its core components, Nova incorporates adaptive gradient scaling to handle sparse and imbalanced data efficiently and a hybrid learning rate adjustment to reduce hyperparameter sensitivity. This combination enhances training dynamics, stability, and robustness across various deep learning tasks. Experimental results on benchmark datasets, such as CIFAR-10, MNIST, SST-2, and noisy MNIST, demonstrate Nova’s superior performance. For instance, Nova achieves a test accuracy of 90.01\% on CIFAR-10, significantly outperforming Adam’s 83.14\% and Nadam’s 80.85\%. On the SST-2 dataset, Nova achieves a test accuracy of 82.00\%, surpassing Adam's 66.28\% and AdamW's 81.65\%. Furthermore, Nova demonstrates robustness to noisy data, achieving a test accuracy of 96.58\% on noisy MNIST. These results show that Nova effectively overcomes the challenges of slow convergence, poor generalization, and sensitivity to data characteristics faced by existing optimizers. Nova’s exceptional performance across diverse benchmark datasets suggests its significant potential for broader applications in deep learning. By addressing the critical limitations of existing optimizers through a novel and synergistic combination of techniques, Nova represents a significant advancement in deep learning optimization, offering a powerful and robust solution that enhances training efficiency, model generalization, and stability. The code, additional experimental results, Online Resource 1 and 2 and full text (Online Resource 3)   related to this paper are publicly available at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.\\
+
+%The paper introduces Nova, a novel hybrid optimizer designed to overcome key limitations of existing methods like Adam, AMSGrad, and AdamW, which often suffer from slow convergence, poor generalization, and instability. Nova uniquely combines Nesterov momentum, AMSGrad’s non-decreasing second moment estimate, and decoupled weight decay, along with adaptive gradient scaling and a hybrid learning rate adjustment. This synergy enhances training dynamics, reduces hyperparameter sensitivity, and improves robustness, especially for sparse or imbalanced data. Experiments on benchmark datasets such as CIFAR-10, MNIST, SST-2, and noisy MNIST demonstrate Nova’s superior performance achieving higher test accuracies than popular optimizers, including 90.01\% on CIFAR-10 and 82.00\% on SST-2. Nova also shows resilience to noisy data, making it a powerful and stable optimization tool. Its publicly available code highlights its practical value, positioning Nova as a significant advancement in deep learning optimization. The code and additional experimental results related to this paper are publicly available at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+
+
+\noindent\textbf{Keywords:} Deep learning, Optimization, Adaptive Gradient Descent,  AMSGrad, Nesterov Momentum, Weight Decay.
+\end{abstract}
+
+%
+%\tableofcontents
+
+\section{Introduction}
+\label{sec:introduction}
+
+Deep learning has transformed fields like computer vision and natural language processing by leveraging complex architectures and large datasets \cite{He2016, Vaswani2017}. Optimization is critical for training neural networks, navigating high-dimensional, non-convex loss landscapes \cite{Goodfellow2016}. Stochastic Gradient Descent (SGD) \cite{Robbins1951} provided a foundation but is limited by slow convergence and sensitivity to learning rate tuning. Adaptive methods like Adam \cite{Kingma2014} improve speed but face challenges with unstable learning rates and poor generalization \cite{Wilson2017, Loshchilov2017}.
+
+We propose \emph{Nova}, a novel optimizer integrating Nesterov momentum, AMSGrad stabilization, and decoupled weight decay to enhance convergence, stability, and generalization. See Section \textcolor{cyan}{1} of Online Resource \textcolor{cyan}{1}  for extended background.
+
+The paper is structured as follows: Section \ref{Sec 2} reviews related works, providing an overview of existing optimization techniques and their limitations. Section \ref{Sec 3} details Nova’s methodology, including a pseudocode representation for clarity, key innovations, time and space complexity. Section \ref{Sec 4} outlines the experimental setup, describing the datasets used CIFAR-10, MNIST, SST-2 and the performance metrics employed, such as ROC and AUC analysis. Section \ref{Sec 5} presents the results, comparing Nova’s performance against other optimizers across various metrics. Section \ref{Sec 6} discusses the findings in depth, including quantitative evidence of Nova’s superiority, analysis of learning curves, confusion matrices, and ROC/AUC curves to validate its discriminatory power. Finally, Section \ref{Sec 7} concludes the paper by summarizing key contributions and proposing future research directions. Supplementary material (consisting of Online Resource~\textcolor{cyan}{1},  Online Resource~\textcolor{cyan}{2} and Online Resource~\textcolor{cyan}{3}) is provided in Section~\ref{Sec 8} for additional reference.  
+\section{Related Works}
+\label{Sec 2}
+
+Optimization in deep learning has evolved from SGD \cite{Robbins1951} to adaptive methods like Adagrad \cite{Duchi2011}, RMSprop \cite{Tieleman2012}, and Adam \cite{Kingma2014}, which adjust learning rates per parameter. However, Adam can suffer from unstable learning rates \cite{Reddi2018} and suboptimal generalization \cite{Wilson2017}. AMSGrad \cite{Reddi2018} stabilizes learning rates, while AdamW \cite{Loshchilov2017} decouples weight decay for better regularization. Momentum techniques, like Nesterov momentum \cite{nesterov1983method}, accelerate convergence but are underutilized in adaptive frameworks. Hybrid methods, such as SWATS \cite{Keskar2017} and Adabound \cite{Luo2019}, combine adaptive and non-adaptive strengths.
+
+Nova unifies AMSGrad’s stabilization, Nesterov momentum, and decoupled weight decay to address these limitations.  For seeing detailed review of optimization methods,  research gaps and objective of study, novelities of paper  refer to \OnlineRef{2, 3 and 4}{1}, respectively.  % For "Sections 2, 3 and 4", respectively.
+
+\section{The Proposed Method}\label{Sec 3}
+
+Algorithm~\ref{alg:nova} presents the pseudocode of the proposed Nova optimizer.
+
+\subsection{Pseudocode}
+
+\begin{algorithm}[H]
+\footnotesize % or \scriptsize if space is tight
+\caption{Nova Optimizer}
+\label{alg:nova}
+\begin{algorithmic}[1]
+\Require Parameters $\theta$, learning rate $\eta$, decay rates $\beta_1, \beta_2$, weight decay $\lambda$, epsilon $\varepsilon$, max iterations $T$
+\Ensure Optimized parameters $\theta$
+\State Initialize $m \gets 0$, $v \gets 0$, $\hat{v}_{\max} \gets 0$, $t \gets 0$
+\For{$t = 1$ to $T$}
+    \State \textbf{(1) Weight decay:} $\theta \gets \theta - \eta \lambda \theta$
+    \State \textbf{(2) Compute gradient:} $g \gets \nabla \text{Loss}(\theta)$
+    \State \textbf{(3) First moment:} $m \gets \beta_1 m + (1 - \beta_1) g$
+    \State Nesterov: $m_{\text{nes}} \gets \beta_1 m + (1 - \beta_1) g$
+    \State \textbf{(4) Second moment:} $v \gets \beta_2 v + (1 - \beta_2) g^2$
+    \State \textbf{(5) Bias correction:}
+    \State \hspace{0.3cm} $\hat{m} \gets \frac{m_{\text{nes}}}{1 - \beta_1^t}$
+    \State \hspace{0.3cm} $\hat{v} \gets \frac{v}{1 - \beta_2^t}$
+    \State \hspace{0.3cm} $\hat{v}_{\max} \gets \max(\hat{v}_{\max}, \hat{v})$
+    \State \textbf{(6) Update:}
+    \State \hspace{0.3cm} $\theta \gets \theta - \eta \cdot \dfrac{\hat{m}}{\sqrt{\hat{v}_{\max}} + \varepsilon}$
+\EndFor
+\State \Return $\theta$
+\end{algorithmic}
+\end{algorithm}
+
+For additional information on the mathematical analysis of the Nova optimizer, major improvements in the Nova optimizer and the reasons behind Nova's superior performance compared to other optimizers, see \OnlineReff{5, 6,  and 7}{1}, respectively.
+
+\subsection{Time and Space Complexity of Common First‐Order Optimizers}
+
+Let $P$ denote the total number of trainable parameters in a model.  Each optimizer updates all parameters in one pass, performing a constant number of element‐wise operations per parameter, so the \emph{time complexity} per iteration is $ \mathcal{O}(P)$.
+ 
+
+Many optimizers maintain auxiliary state vectors of length $P$.  If an optimizer keeps $k$ such vectors, its \emph{additional memory complexity} is:
+\[
+  \mathcal{O}(kP)
+  \quad\text{(beyond the $P$ parameters and their gradients).}
+\]
+
+Table \textcolor{cyan}{1} of Online Resource~\textcolor{cyan}{2} summarizes the relative computational efficiency and memory usage of various optimizers.
+
+
+\section{Experimental Setup}\label{Sec 4}
+%The referenced figures and tables are provided in Online Resource \textcolor{cyan}{2} (ESM\_2.pdf). Additional details are available in the Supplementary Material (Section 8). For the full text of the manuscript, see Online Resource \textcolor{cyan}{3} (ESM\_3.pdf).
+
+Hereafter, all figures and tables referenced in the manuscript are provided in Online Resource \textcolor{cyan}{2} (ESM\_2.pdf) to enhance clarity and readability. For conciseness, the main manuscript includes no visual elements. Additional experimental details are presented in Section 8 (Supplementary Material), and the complete manuscript is available as Online Resource \textcolor{cyan}{3} (ESM\_3.pdf).
+
+%Hereafter, all figures and tables referenced in the manuscript are provided in Online Resource \textcolor{cyan}{2} (ESM\_2.pdf) to enhance clarity and readability. For conciseness, no figures or tables are included in the main manuscript. Additional experimental details are presented in Section 8 (Supplementary Material), and the complete version of the manuscript is available in Online Resource \textcolor{cyan}{3} (ESM\_3.pdf).
+%
+%All figures and tables referenced throughout the manuscript are provided in Online Resource \textcolor{cyan}{2} (ESM\_2.pdf) for clarity and readability. No figures or tables are included in the main manuscript. Additional experimental details are available in Section 8 (Supplementary Material), and the full text of the manuscript is included in Online Resource \textcolor{cyan}{3} (ESM\_3.pdf)
+
+\subsection{Datasets}
+
+This subsection introduces the datasets used to evaluate model performance. Images in each dataset are grouped by class labels. For dataset figures (CIFAR-10, MNIST, and noisy MNIST), refer to Online Resource \textcolor{cyan}{2} (ESM\_2.pdf).
+
+\subsubsection{CIFAR-10 Dataset}
+
+CIFAR-10 contains 60,000 color images of size $32\times32$ across 10 classes (e.g., airplane, cat, truck), with 6,000 images per class. The dataset is split into 50,000 training and 10,000 test images. Despite its low resolution, CIFAR-10 offers balanced, diverse samples, commonly used in image classification with models like CNNs, ResNet, and VGG. Typical preprocessing includes normalization and augmentation. See Fig.~\textcolor{cyan}{1a}.
+
+\subsubsection{MNIST Dataset}
+
+MNIST comprises grayscale images of handwritten digits (0–9), with 60,000 training and 10,000 test images. In our setup, 40,000 training images were used (excluding digits 4 and 8), and 80 images containing digits 4 and 8 were reserved for testing. Validation data was randomly selected from the training set. See Figs.~\textcolor{cyan}{1b} and \textcolor{cyan}{2} of  Online Resource \textcolor{cyan}{2}. for clean and noisy samples (the latter generated with Gaussian noise, $\text{noise\_std} = 0.5$).
+
+\subsubsection{SST-2 Dataset}
+
+The Stanford Sentiment Treebank (SST-2) is a binary sentiment classification benchmark with 6,920 training, 872 validation, and 1,821 test samples. Originating from Socher et al. (2013), SST-2 focuses on classifying movie review sentences as positive or negative and includes complex linguistic structures and sentiment cues.
+
+\subsubsection{Optimizer Evaluation on Standard Networks}
+
+To evaluate optimizer performance, we use ResNet-18 and LeNet-5 (see Keras or Kaggle for architectures). Tables \textcolor{cyan}{2}–\textcolor{cyan}{9} summarize model architectures and configurations, and  Tables \textcolor{cyan}{11}–\textcolor{cyan}{18}  provide comparative results. Code and additional experiments are available at: \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+
+
+
+% \subsection{Datasets}
+% 
+%In this subsection, the datasets that will be used to evaluate the model's performance are introduced. The images of each dataset are arranged according to their classes (labels). For seeing figures related to datasets CIFAR-10, MNIST and noisy MNIST refer to  \OnlineRef{1.1}{1} (ESM\_1.pdf). 
+%
+%
+%\subsubsection{ CIFAR-10 Dataset}
+%
+%The CIFAR-10  (Canadian Institute For Advanced Research) dataset is a widely used benchmark in deep learning and computer vision, consisting of 60,000 $32\times 32$ color images across 10 classes, including airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck, with 6,000 images per class. It is divided into 50,000 training images and 10,000 test images, making it ideal for tasks like image classification and object recognition. Despite its low resolution, which can challenge fine detail recognition, the dataset is balanced and exhibits significant intra-class variability. Common preprocessing steps include normalization and data augmentation techniques like flipping and cropping. CIFAR-10 is often used to evaluate models such as CNNs, ResNet, and VGG, with accuracy being the primary performance metric. See Fig.~\ref{fig:f4}.
+%
+%
+%
+%\subsubsection{MNIST Dataset}
+%
+%The MNIST (Modified National Institute of Standards and Technology) database is defined as a dataset of handwritten digit images, composed of 60,000 training images and 10,000 test images. In the experiments, 40,000 samples from the training set were utilized, with digits 4 and 8 excluded, while 80 samples containing digits 4 and 8 were used for testing. The validation set was randomly selected and extracted from the original training set. A variety of English handwritten digits from the MNIST dataset, which includes 10 distinct classes, are displayed in Fig.~\ref{fig:f5}. Fig.~\ref{noisy} shows noisy MNIST after applaying GaussianNoise algorithm with noise\_std = 0.5.
+%
+%
+%
+%\subsubsection{SST-2 Dataset}
+%The Stanford Sentiment Treebank (SST-2) is a benchmark dataset widely employed in the evaluation of binary sentiment classification systems. Originally introduced by Socher et al. (2013) in the context of recursive deep models, SST-2 is a curated subset of the full Stanford Sentiment Treebank, distilled to address a binary classification task categorizing sentences as either positive or negative. The dataset comprises 6,920 training examples, 872 development samples, and 1,821 test samples, providing a balanced yet challenging corpus that contains a rich variety of linguistic constructs and sentiment nuances derived from movie reviews.
+%
+%
+%
+%
+%
+%
+%
+%
+%\subsubsection{Evaluating the Performance of Various Optimizers on Some Well-Known Networks: A Comparison with Nova}
+%
+%In this subsection, well-known neural networks will be introduced for evaluating the performance of different optimizers with Nova. ResNet-18 and LeNet-5 (refer to website Keras or Kaggle for seeing architecture) will be utilized. Tables \textcolor{cyan}{2}, \textcolor{cyan}{3}, \textcolor{cyan}{4}, \textcolor{cyan}{5}, \textcolor{cyan}{6}, \textcolor{cyan}{7}, \textcolor{cyan}{8} and \textcolor{cyan}{9} are provided to present details about their architectures, a comparison between them and configurations of the models. The code and additional experimental results related to this paper are publicly available at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+
+
+\subsection{Performance Metrics}
+
+This section outlines the key metrics used to evaluate the proposed method.
+
+Model performance is assessed using standard evaluation metrics derived from the confusion matrix, which summarizes prediction outcomes for binary classification into four categories (see \cite{CC}):\vspace{1mm}
+
+\begin{itemize}
+\item $TP$ (True Positives): Correctly predicted positive instances.
+\item $TN$ (True Negatives): Correctly predicted negative instances.
+\item $FP$ (False Positives): Incorrectly predicted positives.
+\item $FN$ (False Negatives): Incorrectly predicted negatives.
+\end{itemize}
+
+From these values, the following metrics are computed:
+\begin{itemize}
+\item \textbf{Accuracy}: Proportion of correctly predicted instances:
+\[ \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN} \]
+\item \textbf{Precision}: Proportion of true positives among predicted positives:
+\[ \text{Precision} = \frac{TP}{TP + FP} \]
+\item \textbf{Recall}: Proportion of true positives among actual positives:
+\[ \text{Recall} = \frac{TP}{TP + FN} \]
+\item \textbf{F1-score}: Harmonic mean of precision and recall:
+\[ \text{F1-score} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}} \]
+\end{itemize}
+
+Table~\textcolor{cyan}{10}  of  Online Resource \textcolor{cyan}{2} presents the confusion matrix and summarizes these evaluation metrics.
+
+
+%\subsection{Performance Metrics}
+%
+%
+%
+%
+%This section defines and presents some metrics that will be used in evaluating the performance of the proposed method.
+%
+%
+%
+%To assess the performance of the network, we use specific standards. Model efficiency can be measured using the confusion matrix. An example of this model's predictive capability is illustrated in a table that displays four combinations of predicted and actual values. Specifically, the confusion matrix is comprised of four fundamental components for a binary class dataset containing positive and negative classes (See \cite{CC}):\vspace{1mm}
+%
+%1- $TP$ (True Positives): Instances correctly predicted as positive.
+%
+%2- $TN$ (True Negatives): Instances correctly predicted as negative.
+%
+%3- $FP$ (False Positives): Instances incorrectly predicted as positive.
+%
+%4- $FN$ (False Negatives): Instances incorrectly predicted as negative.
+%
+%Table \ref{table3} shows the confusion matrix and evaluation metrics++++++++++.
+
+
+%Different metrics can be established to evaluate classifiers using the elements in the confusion matrix, which are delineated mathematically as follows:
+
+
+
+
+
+
+
+%\begin{table}[H]
+%\centering
+%\caption{Confusion matrix and evaluation metrics}
+%\renewcommand{\arraystretch}{2}
+%\begin{tabular}{l|l|c|c|}
+%\multicolumn{2}{c}{} & \multicolumn{2}{c}{\textbf{Predicted class}} \\
+%\cline{3-4}
+%\multicolumn{2}{c|}{} & \cellcolor{purple!25} \textbf{Positive} & \cellcolor{red!25} \textbf{Negative} \\
+%\cline{2-4}
+%\multirow{2}{*}{\textbf{Actual class}} & \cellcolor{purple!25} \textbf{Positive} & \cellcolor{cyan!25} True Positive (TP) & \cellcolor{cyan!25} False Negative (FN) \\
+%\cline{2-4}
+%& \cellcolor{red!25} \textbf{Negative} & \cellcolor{gray!25} False Positive (FP) & \cellcolor{gray!25} True Negative (TN) \\
+%\cline{2-4}
+%\multicolumn{2}{c|}{} & \cellcolor{green!40} $ Precision = \frac{TP}{TP + FP}$ & \cellcolor{orange!40} $ Recall = \frac{TP}{TP + FN}$ \\
+%\multicolumn{2}{c|}{} & \cellcolor{yellow!40} $ Accuracy = \frac{TN + TP}{TP + TN + FP + FN}$ & \cellcolor{pink!40} $ F1$ score $= \frac{2  TP}{2 TP + FP + FN}$ \\
+%\end{tabular}
+%\label{table3}
+%\end{table}
+
+
+
+\subsubsection{Receiver Operating Characteristic (ROC) Curve and Area Under the Curve (AUC) Analysis}
+
+The ROC curve illustrates the diagnostic ability of a binary classifier as its discrimination threshold varies. It plots the true positive rate (TPR) against the false positive rate (FPR), capturing the trade-off between sensitivity and specificity.
+
+AUC (Area Under the Curve) quantifies the overall ability of the model to distinguish between classes. Key interpretations include:
+
+\begin{itemize}
+\item \textbf{AUC $\approx$ 1:} Excellent class separation; the model distinguishes well between positive and negative classes.
+\item \textbf{AUC $\approx$ 0.5:} No discrimination; the model performs no better than random guessing.
+\item \textbf{AUC $\approx$ 0:} Inverted prediction; the model consistently misclassifies the classes.
+\end{itemize}
+
+Higher AUC values reflect better model performance in binary classification tasks.
+
+
+
+%\subsubsection{Receiver Operating Characteristic (ROC) Curve and Area Under the Curve (AUC) Analysis}
+%
+%
+%The AUC-ROC curve represents the performance of a binary classification model at different classification thresholds. In machine learning, it is used to test a model's ability to distinguish between two classes, usually the positive class  and the negative class. ROC and AUC are two terms that need first to be understood.
+%
+%\begin{itemize}
+%\item ROC: Receiver operating characteristics.
+%
+%\item AUC: Area under curve.
+%\end{itemize}
+%
+%
+%\begin{itemize}
+%
+%\item AUC close to 1 indicates excellent discrimination power. As a result, the model makes reliable predictions about both classes and is effective in distinguishing between them.
+%
+%\item AUC close to 0 indicates poor performance. The model may not be able to distinguish between positive and negative classes in this case.
+%
+%\item AUC around 0.5 indicates that the model is essentially making random guesses. There are no patterns learned from the data, indicating that the model cannot separate classes.
+%\end{itemize}
+
+
+
+\section{Results}\label{Sec 5}
+
+
+
+In this section, the results related to the comparison of performance metrics between Nova and other optimizers will be presented. 
+
+
+
+
+\subsection{Comparison of Performance Metrics of Nova with Other Optimizers} 
+
+
+%Tables \textcolor{cyan}{11}, \textcolor{cyan}{13} and \textcolor{cyan}{15} respectively show the comparison of accuracy and loss between Nova and other optimizers on the CIFAR-10 and MNIST datasets. Tables \textcolor{cyan}{12}, \textcolor{cyan}{14} and \textcolor{cyan}{16} respectively present a comparison of precision, recall, and F1-score between Nova and other optimizers on CIFAR-10, MNIST and SST-2. Tables \textcolor{cyan}{17} and \textcolor{cyan}{18} denote performance metric on noisy MNIST and performance of nova optimizer hyperparameter combinations on MNIST, respectively.
+
+Tables \textcolor{cyan}{11}, \textcolor{cyan}{13} and \textcolor{cyan}{15}  respectively show the comparison of accuracy and loss between Nova and other optimizers on the CIFAR-10 and MNIST datasets. Tables \textcolor{cyan}{12}, \textcolor{cyan}{14} and \textcolor{cyan}{16} respectively present a comparison of precision, recall, and F1-score between Nova and other optimizers on CIFAR-10,  MNIST and SST-2. Tables \textcolor{cyan}{17} and \textcolor{cyan}{18} denote performance metric on noisy MNIST and performance of nova optimizer hyperparameter combinations on MNIST, respectively.
+
+
+
+\section{Discussion}\label{Sec 6}
+
+This study presents a comprehensive evaluation of the proposed Nova optimization algorithm against four established optimizers: Adam, RMSprop, SGD, and Nadam. Experiments were conducted on four benchmark datasets CIFAR-10, MNIST, SST-2, and noisy MNIST using appropriate deep learning architectures: ResNet-18 (CIFAR-10), LeNet-5 (MNIST, noisy MNIST), and a text classification model (SST-2). Evaluation criteria included training/validation/test losses and accuracies, along with precision, recall, F1-score, confusion matrices, ROC curves, and learning curves.
+
+\subsection{Quantitative Performance: Evidence of Nova’s Superiority}
+
+As reported in Tables \textcolor{cyan}{11--14}, Nova consistently outperformed all baselines on CIFAR-10, achieving the lowest test loss (0.3345 vs. 0.5069 for Adam and 1.1325 for SGD) and highest test accuracy (90.01\%), precision (89.98\%), recall (90.01\%), and F1-score (89.99\%). These improvements stem from Nova’s use of Look-ahead Nesterov Momentum and AMSGrad stabilization, enabling better convergence and generalization.
+
+On MNIST, where differences among optimizers are typically narrower, Nova again achieved top metrics minimal test loss (0.0295) and maximal test accuracy (98.95\%) demonstrating its efficiency even in low-complexity settings. While Nadam performed closely, Nova retained a marginal advantage, as shown in Tables \textcolor{cyan}{13} and \textcolor{cyan}{14}.
+
+SST-2 sentiment classification results (Tables \textcolor{cyan}{15}--\textcolor{cyan}{16} reaffirm Nova's robustness in textual domains, attaining superior test accuracy (82.00\%), precision (82.11\%), and F1-score (82.11\%), outperforming Adam (66.28\%), RMSprop (65.94\%), and SGD (54.47\%). Nova’s adaptive gradient scaling and stabilization mechanisms prove particularly beneficial in handling sparse gradients typical in text tasks.
+
+Even under noisy conditions (noisy MNIST), Nova remained resilient, achieving 96.58\% test accuracy, outperforming all other optimizers (Table \textcolor{cyan}{17}). Its stability in the presence of Gaussian noise highlights its robustness and effective gradient handling.
+
+Collectively, Nova consistently delivered superior results across all datasets and metrics, establishing itself as a state-of-the-art optimizer suitable for diverse and challenging learning tasks.
+
+\subsection{Learning Dynamics and Visual Insights}
+
+Figs.~\textcolor{cyan}{3--6} provide a visual corroboration of Nova’s efficiency. On CIFAR-10, Nova exhibited the steepest decline in training loss and the most stable ascent in accuracy, confirming rapid convergence and superior generalization. In contrast, SGD and RMSprop showed slower progress and poorer asymptotic performance.
+
+For MNIST (Fig.~\textcolor{cyan}{4}), although most optimizers performed well, Nova still showed faster convergence and smoother training dynamics. On SST-2 (Fig.~\textcolor{cyan}{5}), Nova achieved higher final accuracy with quicker stabilization, demonstrating adaptability to textual data. Notably, on noisy MNIST (Fig.~\textcolor{cyan}{6}), Nova showed stable training trajectories despite data corruption.
+
+Bar plots in Figures \textcolor{cyan}{7--8}  succinctly summarize test accuracies across datasets. Nova consistently ranks highest or close to the top, visually emphasizing its overall effectiveness and consistent performance across domains.
+
+
+
+
+
+%\section{Discussion}\label{Sec 6}
+%This study presents a comprehensive and rigorous comparative analysis of the proposed Nova optimization algorithm against five widely recognized and state-of-the-art optimizers: Adam, RMSprop, SGD, and Nadam. The evaluation was systematically conducted across four diverse and challenging benchmark datasets: CIFAR-10, MNIST, SST-2, and noisy MNIST. To ensure a fair and relevant comparison, established and effective network architectures were utilized, including a modified ResNet-18 tailored for CIFAR-10 image classification, LeNet-5 for the MNIST and noisy MNIST datasets, and a robust text classification model for the SST-2 sentiment analysis task. Our meticulously designed evaluation framework incorporated a broad spectrum of quantitative performance metrics, encompassing training loss, training accuracy, validation loss, validation accuracy, test loss, test accuracy, precision, recall, and F1-score. Complementing this quantitative assessment, we performed in-depth qualitative analyses by examining learning curves, confusion matrices, and Receiver Operating Characteristic (ROC) curves. The convergence of evidence from these multi-faceted evaluations unequivocally and demonstrably establishes the profound and consistent advantages of the Nova optimizer, positioning it as a leading optimization method capable of achieving superior performance across diverse deep learning applications and challenging data conditions.
+%
+%\subsection{Analysis of Performance Metrics: Quantitative Evidence of Nova’s Superiority}
+%The quantitative performance metrics, comprehensively detailed in Tables \textcolor{cyan}{11}, \textcolor{cyan}{12}, \textcolor{cyan}{13}, and \textcolor{cyan}{14} for the CIFAR-10 and MNIST datasets, provide compelling and irrefutable evidence of Nova’s superior optimization capabilities. On the more complex and visually diverse CIFAR-10 image classification dataset, Nova demonstrably and consistently surpassed all evaluated alternatives in both minimizing the objective function loss and maximizing model accuracy. As clearly shown in Table \textcolor{cyan}{11}, Nova achieved the lowest training loss (0.1550), validation loss (0.3180), and test loss (0.3345). This substantial and significant reduction in loss values, particularly the test loss which is a strong indicator of generalization, signifies Nova’s enhanced ability to effectively navigate the intricate and high-dimensional non-convex loss landscape of CIFAR-10 and converge towards more optimal minima compared to Adam (test loss of 0.5069), Nadam (0.5718), RMSprop (1.0597), and SGD (1.1325). This superiority in loss minimization is attributed to Nova’s synergistic integration of Look-ahead Nesterov Momentum, which reduces oscillations and accelerates convergence by anticipating future gradients, and AMSGrad stabilization, which prevents premature decay of the learning rate, ensuring sustained progress towards the minimum.
+%
+%Beyond loss minimization, Nova set a new and significantly higher benchmark for accuracy on the CIFAR-10 dataset, attaining a test accuracy of 90.01\% (Table \textcolor{cyan}{2}). This performance represents a substantial leap in generalization capabilities, unequivocally surpassing the test accuracies achieved by Adam (83.14\%), Nadam (80.85\%), RMSprop (61.01\%), and SGD (58.57\%). The notable gap in accuracy, especially when compared to widely used optimizers like Adam and Nadam, underscores the effectiveness of Nova’s combined mechanisms, including decoupled weight decay which promotes better generalization by applying regularization directly to the weights rather than entangling it with gradient updates. The classification metrics presented in Table \textcolor{cyan}{12} further solidify Nova’s commanding lead on CIFAR-10, with the highest precision (89.98\%), recall (90.01\%), and F1-score (89.99\%). These metrics collectively affirm Nova’s unmatched ability to deliver balanced and highly effective classification outcomes, minimizing both false positives and false negatives on this challenging image dataset.
+%
+%Even on the less intricate MNIST dataset, where high performance is generally more easily attainable and differences among optimizers can be less pronounced, Nova resolutely maintained its position of excellence (Tables \textcolor{cyan}{13} and \textcolor{cyan}{14}). Nova achieved the absolute minimal losses across all phases (Training Loss: 0.0204, Validation Loss: 0.0370, Test Loss: 0.0295) and maximal accuracies (Training Accuracy: 99.33\%, Validation Accuracy: 98.86\%, Test Accuracy: 98.95\%) on MNIST. While Nadam exhibited very competitive performance on MNIST, closely approaching Nova’s metrics, Nova still retained the definitive edge in achieving the absolute best performance. This consistent performance on a simpler dataset demonstrates that Nova’s benefits are not limited to complex tasks but also translate to efficiency and precision even when the optimization problem is less challenging. Table \textcolor{cyan}{14} further details the classification metrics on MNIST, showing Nova with the highest precision (98.95\%), recall (98.94\%), and F1-score (98.94\%), reinforcing its quantitative superiority in classification outcomes. The high performance of all adaptive optimizers on MNIST, even with SGD achieving a respectable F1-score, highlights the dataset’s simplicity but does not detract from Nova’s consistent leadership and demonstrable advantages, particularly evident on more challenging tasks.
+%
+%The evaluation was extended to the SST-2 dataset for binary sentiment classification, effectively showcasing Nova’s superiority on text-based tasks (Tables \textcolor{cyan}{15} and \textcolor{cyan}{16}). Nova again demonstrated significantly superior performance, achieving the best test accuracy (82.00\%), precision (82.11\%), recall (82.12\%), and F1-score (82.11\%) among all evaluated optimizers. This performance is markedly higher than Adam (test accuracy 66.28\%), AdamW (81.65\%), RMSprop (65.94\%), SGD (54.47\%), and Nadam (66.17\%). Nova’s strong performance on SST-2 is attributable to its adaptive gradient scaling mechanism, which is particularly beneficial for handling sparse gradients often encountered in text data, and its robust momentum and stabilization components that ensure effective learning dynamics on sequential data.
+%
+%Furthermore, the results on the noisy MNIST dataset (Table \textcolor{cyan}{17}) unequivocally underscore Nova’s exceptional robustness to corrupted data. Despite the introduction of significant Gaussian noise, Nova maintained a remarkably high test accuracy of 96.58\%, coupled with strong precision (96.56\%), recall (96.56\%), and F1-score (96.56\%). This performance was notably superior to or competitive with other adaptive optimizers like AdamW (96.14\%) and Adam (96.17\%), and significantly better than SGD (91.32\%). The ability of Nova to maintain high performance under noisy conditions is a crucial advantage, stemming from its AMSGrad stabilization, which provides more reliable second-moment estimates, and its overall robust update rule that is less susceptible to erratic gradients caused by noise.
+%
+%The consistent and pronounced quantitative superiority of Nova across all four diverse datasets and a comprehensive suite of performance metrics provides overwhelming and irrefutable evidence of its effectiveness, robustness, and broad applicability. The detailed data presented in Tables \textcolor{cyan}{11}, \textcolor{cyan}{12}, \textcolor{cyan}{13}, \textcolor{cyan}{14}, \textcolor{cyan}{15}, \textcolor{cyan}{16}, and \textcolor{cyan}{17} collectively establish Nova as a state-of-the-art optimizer, particularly well-suited for complex and challenging tasks requiring high accuracy, strong generalization, and robust performance across various data types and conditions.
+%
+%\subsection{Analysis of Learning Curves and Bar Plots: Visualizing Nova’s Training Dynamics}
+%The learning curves presented in Figures \textcolor{cyan}{3}, \textcolor{cyan}{4}, \textcolor{cyan}{5}, and \textcolor{cyan}{6} offer compelling visual corroboration of the quantitative results and provide valuable insights into the training dynamics and convergence behavior of each optimizer. On CIFAR-10 (Fig.~\textcolor{cyan}{3}), Nova’s loss curve (represented by blue and cyan lines) consistently exhibits the most rapid and pronounced descent from the initial training epochs, quickly reaching a demonstrably lower plateau compared to all other optimizers. This visual trajectory unequivocally confirms Nova’s faster convergence speed, a direct benefit of its Look-ahead Nesterov Momentum which anticipates gradient changes and reduces oscillations. Correspondingly, Nova’s accuracy curve (Fig.~\textcolor{cyan}{3}) ascends most rapidly and stabilizes at the highest accuracy level, visually reinforcing its superior asymptotic performance and generalization on complex image data. In stark contrast, the learning curves for SGD (grey lines) and RMSprop (red lines) on CIFAR-10 show significantly sluggish convergence and stagnate at markedly inferior performance levels, visually demonstrating their limitations on this dataset.
+%
+%On the MNIST dataset (Fig.~\textcolor{cyan}{4}), while all adaptive optimizers exhibit fast convergence on this simpler dataset, Nova’s learning curves (blue lines) demonstrate exceptionally rapid convergence to near-perfect performance. Although visually very close to Nadam (purple lines), Nova’s curves often show a subtle visual edge in terms of speed and stability during the later stages of training, hinting at slightly more efficient optimization.
+%
+%The learning curves for SST-2 (Fig.~\textcolor{cyan}{5}) and noisy MNIST (Fig.~\textcolor{cyan}{6}) further highlight Nova’s adaptability and robustness across different data modalities and conditions. On SST-2, Nova’s curves show faster initial convergence and consistently reach a higher final accuracy compared to most competitors, visually indicating its efficiency in optimizing models for text classification. On noisy MNIST (Fig.~\textcolor{cyan}{6}), Nova’s learning curves demonstrate more stable training trajectories and achieve higher final performance in the presence of noise, visually validating its resilience and the effectiveness of its stabilization mechanisms.
+%
+%The bar plots presented in Fig.~\textcolor{cyan}{8} provide a clear, concise, and impactful visual summary of the test accuracies achieved by each optimizer across the evaluated datasets. The plots for CIFAR-10 and MNIST (Fig.~\textcolor{cyan}{7}) clearly show Nova with the tallest bar, definitively signifying the highest test accuracy achieved. Similarly, the bar plots for SST-2 (Fig.~\textcolor{cyan}{8a}) and noisy MNIST (Fig.~\textcolor{cyan}{8b}) consistently confirm Nova’s leading or highly competitive performance in terms of test accuracy, often with a visible margin over other optimizers. This unified visual representation effectively encapsulates Nova’s overall superior performance across diverse tasks and datasets, making its advantages immediately apparent.
+
+
+\subsection{Analysis of Confusion Matrices: Granular Insight into Nova’s Classification Precision}
+
+The confusion matrices presented in Figs.~\textcolor{cyan}{9}, \textcolor{cyan}{10}, \textcolor{cyan}{11}, and \textcolor{cyan}{12} offer detailed insights into the per-class classification behaviors of different optimizers. These visualizations serve as critical tools for understanding both the strengths and limitations of each optimizer by illustrating patterns of correct predictions and misclassifications at a granular level.
+
+On CIFAR-10 (Fig.~\textcolor{cyan}{9}), Nova’s confusion matrix (Fig.~\textcolor{cyan}{9a}) reveals a sharply defined and intensely saturated diagonal, which vividly signifies strong and uniformly distributed classification accuracy across all ten classes. The negligible intensity of off-diagonal elements highlights an exceptionally low rate of misclassification. This clear dominance of the diagonal demonstrates Nova’s capability to distinguish between visually complex classes with high precision. In comparison, Adam’s confusion matrix (Fig.~\textcolor{cyan}{9b}) exhibits a weaker diagonal and increased off-diagonal density, suggesting more frequent confusion between classes. The matrices for RMSprop (Fig.~\textcolor{cyan}{9c}) and SGD (Fig.~\textcolor{cyan}{9d}) further deviate from ideal performance, displaying more diffuse patterns and higher off-diagonal values, which indicate significant difficulties in accurate class separation.
+
+On MNIST (Fig.~\textcolor{cyan}{10}), a benchmark dataset where high classification performance is generally achievable, Nova continues to exhibit visual superiority. Its confusion matrix (Fig.~\textcolor{cyan}{10a}) shows an almost flawless diagonal with virtually imperceptible off-diagonal elements. This reflects near-perfect classification for all digit classes (0–9), visually corroborating the high quantitative accuracy metrics. Although Adam (Fig.~\textcolor{cyan}{10b}) and Nadam (Fig.~\textcolor{cyan}{10e}) also achieve strong results, their matrices show slightly less saturated diagonals and a greater number of faint off-diagonal misclassifications, indicating that Nova maintains a subtle yet consistent advantage in class discrimination.
+
+The SST-2 dataset (Fig.~\textcolor{cyan}{11}), which poses a binary sentiment classification challenge, further highlights Nova’s robustness. Its confusion matrix (Fig.~\textcolor{cyan}{11a}) presents a clear, symmetric diagonal, reflecting high true positive and true negative rates for both sentiment classes. In contrast, competing optimizers demonstrate higher off-diagonal activity, suggesting a greater incidence of false positives and false negatives. Similarly, on the noisy MNIST dataset (Fig.~\textcolor{cyan}{12}), Nova’s matrix (Fig.~\textcolor{cyan}{12a}) retains a strong diagonal structure despite the added noise. This showcases Nova’s resilience and ability to maintain classification precision under degraded input conditions. Other optimizers display noticeably more dispersed matrices, indicating that their performance degrades more significantly in the presence of noise.
+
+In summary, the confusion matrices across all datasets consistently highlight Nova’s visual and quantitative superiority. Its matrices are marked by dominant diagonals and minimal misclassification noise, underscoring its capacity for precise, balanced, and resilient class-level prediction. These visual findings align with and reinforce the statistical performance metrics, establishing Nova as a highly reliable optimizer across a diverse range of classification tasks and data complexities.
+
+
+%\subsection{Analysis of Confusion Matrices: Granular Insight into Nova’s Classification Precision}
+%Analysis of the confusion matrices, comprehensively presented in Figures \textcolor{cyan}{9}, \textcolor{cyan}{10}, \textcolor{cyan}{11}, and \textcolor{cyan}{12}, provides crucial granular insights into the class-by-class breakdown of classification performance. This allows for a deeper understanding of where each optimizer excels or struggles and visually reinforces the quantitative metrics by illustrating the patterns of correct and incorrect classifications.
+%
+%On CIFAR-10 (Fig.~\textcolor{cyan}{9}), Nova’s confusion matrix (Fig.~\textcolor{cyan}{9a}) exhibits a remarkably strong, sharply defined, and intensely saturated diagonal. This vivid diagonal is a direct and powerful visual manifestation of Nova’s high and balanced accuracy across all ten CIFAR-10 classes, indicating a predominantly correct classification rate for each category with minimal confusion between different classes. The off-diagonal elements in Nova’s matrix are notably faint and muted, signifying a negligibly low rate of misclassifications. This visually clean matrix with a dominant diagonal stands in stark contrast to the matrices of other optimizers. For instance, Adam’s matrix (Fig.~\textcolor{cyan}{9b}), while showing a discernible diagonal, exhibits reduced color intensity and a noticeably higher presence of off-diagonal elements, indicating lower overall accuracy and increased class confusion relative to Nova. The confusion matrices for RMSprop (Fig.~\textcolor{cyan}{9c}) and SGD (Fig.~\textcolor{cyan}{9d}) show progressively more diffuse patterns with weaker diagonals and significantly more intense off-diagonal entries, visually demonstrating their substantial struggles in accurately classifying CIFAR-10 images and their higher rates of misclassification across multiple classes.
+%
+%For MNIST (Fig.~\textcolor{cyan}{10}), even on this simpler dataset where high accuracies are generally achievable by adaptive methods, Nova’s confusion matrix (Fig.~\textcolor{cyan}{10a}) stands out as exhibiting near-perfect classification performance. The diagonal is exceptionally dominant and intensely saturated, even more pronounced than in the CIFAR-10 matrices, visually signifying Nova’s near-flawless accuracy across all MNIST digits (0-9). The off-diagonal elements in Nova’s MNIST confusion matrix are almost imperceptible, appearing as faint traces, visually confirming minimal misclassifications and exceptional precision in digit recognition. While other adaptive optimizers like Adam (Fig.~\textcolor{cyan}{10b}) and Nadam (Fig.~\textcolor{cyan}{10e}) also show strong diagonals, Nova’s matrix visually suggests a subtle yet persistent edge in achieving the absolute highest degree of class separation and minimizing even rare misclassifications.
+%
+%The confusion matrices for SST-2 (Fig.~\textcolor{cyan}{11}) and noisy MNIST (Fig.~\textcolor{cyan}{12}) further demonstrate Nova’s robust and precise classification capabilities under different conditions. On SST-2 (Fig.~\textcolor{cyan}{11a}), Nova’s matrix shows a clear and strong diagonal for both the positive and negative sentiment classes, indicating effective and balanced discrimination. The matrices for other optimizers on SST-2 exhibit more off-diagonal elements, particularly between the positive and negative classes, signifying higher rates of false positives and false negatives. On noisy MNIST (Fig.~\textcolor{cyan}{12a}), Nova’s confusion matrix maintains a strong and well-defined diagonal despite the presence of significant noise, visually confirming its resilience and superior ability to correctly classify digits even under perturbed conditions, clearly outperforming many other optimizers whose matrices show more diffused patterns and increased off-diagonal noise.
+%
+%The consistent and compelling visual superiority of Nova’s confusion matrices across all evaluated datasets, characterized by their strong, sharply defined diagonals and minimal off-diagonal noise, provides powerful intuitive evidence that reinforces the quantitative findings. This visual analysis underscores Nova’s exceptional and balanced classification performance, demonstrating its ability to achieve precise class separation and minimize misclassifications across diverse data types and challenging scenarios, solidifying its position as a preeminent optimizer for classification tasks.
+
+\subsection{Analysis of ROC and AUC Curves: Threshold-Independent Validation of Nova’s Discriminatory Power}
+The Receiver Operating Characteristic (ROC) curves and their corresponding Area Under the Curve (AUC) values, presented in Figs.~\textcolor{cyan}{13}, \textcolor{cyan}{14}, and \textcolor{cyan}{15}, offer a threshold-independent evaluation of each optimizer’s ability to discriminate between classes. This analysis provides crucial quantitative and visual evidence underscoring Nova’s superiority in classification performance.
+
+On CIFAR-10 (Fig.~\textcolor{cyan}{13}), Nova’s ROC curves (Fig.~\textcolor{cyan}{13a}) exhibit near-ideal behavior across all ten classes. Each curve is tightly clustered in the top-left corner of the plot, closely resembling the theoretical ideal ROC shape. The corresponding AUC values consistently reach or approach 1.00, as indicated in the legend, reflecting Nova’s exceptional ability to distinguish between positive and negative instances for each class. This performance, both visual and numerical, affirms Nova’s remarkable class-balanced discriminatory power. In contrast, the ROC curves for Adam (Fig.~\textcolor{cyan}{13b}), RMSprop (Fig.~\textcolor{cyan}{13c}), and SGD (Fig.~\textcolor{cyan}{13d}) show progressively greater deviations from the ideal curve, bending more toward the diagonal and accompanied by lower AUC scores. Even Nadam’s ROC curves (Fig.~\textcolor{cyan}{13e}), though strong, demonstrate subtle shifts away from the top-left corner compared to Nova’s consistently tight alignment, highlighting Nova’s nuanced advantage.
+
+For MNIST (Fig.~\textcolor{cyan}{14}), where high performance is generally expected, all adaptive optimizers achieve nearly perfect ROC curves. Nevertheless, Nova (Fig.~\textcolor{cyan}{14a}) achieves perfect AUC scores of 1.000 across all digit classes (0–9), with curves hugging the top-left boundary with unmatched precision. While Adam (Fig.~\textcolor{cyan}{14b}) and Nadam (Fig.~\textcolor{cyan}{14e}) also reach AUCs of 1.000 for most classes, Nova’s ROC curves suggest slightly better-calibrated prediction probabilities due to their more uniform adherence to the ideal. SGD’s ROC curves (Fig.~\textcolor{cyan}{14d}), though improved relative to CIFAR-10, still show marginal deviations from the top-left corner, indicating a comparatively reduced discriminatory ability.
+
+The SST-2 results (Fig.~\textcolor{cyan}{15}) further highlight Nova’s strong performance on text-based binary classification. Its ROC curves for both the positive (Fig.~\textcolor{cyan}{15a}) and negative (Fig.~\textcolor{cyan}{15b}) sentiment classes lie closer to the top-left corner than those of other optimizers, reflecting superior discrimination across varying thresholds. While ROC curves for noisy MNIST are not shown, Nova’s strong classification metrics on this dataset (Table~\textcolor{cyan}{17}) suggest its robust performance is retained even in noisy conditions.
+
+Across all evaluated datasets CIFAR-10, MNIST, and SST-2 Nova consistently achieves near-ideal ROC curves and the highest AUC values, offering definitive visual and quantitative validation of its exceptional classification capabilities. This consistency across diverse domains underscores the strength of Nova’s optimization dynamics in producing highly discriminative models. The code and additional experimental results are publicly available at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+
+
+\subsection{Analysis of Hyperparameter Sensitivity: Demonstrating Nova's Practical Advantage}
+
+
+Table~\textcolor{cyan}{18} shows that the Nova optimizer achieves consistently high performance on MNIST across various hyperparameter settings (e.g., learning rate, momentum, and weight decay). Unlike traditional optimizers like SGD, Nova demonstrates low sensitivity to these parameters, offering a major practical benefit by reducing the need for extensive tuning. This robustness is attributed to Nova’s adaptive mechanism, which dynamically adjusts learning rates and momentum per parameter. Overall, experiments across multiple datasets confirm Nova’s superiority, combining Look-ahead Nesterov Momentum, AMSGrad corrections, and decoupled weight decay. Nova achieves faster convergence, better generalization, and enhanced stability establishing it as a leading deep learning optimizer. Code and results are available at: \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}
+
+
+
+%\subsection{Analysis of ROC and AUC Curves: Threshold-Independent Validation of Nova’s Discriminatory Power}
+%The Receiver Operating Characteristic (ROC) curves and their corresponding Area Under the Curve (AUC) values, presented in Figs. \textcolor{cyan}{13}, \textcolor{cyan}{14}, and \textcolor{cyan}{15}, offer a threshold-independent assessment of the optimizers’ ability to discriminate between classes. This analysis provides further crucial quantitative and visual evidence that strongly supports Nova’s superiority in classification performance.
+%
+%On CIFAR-10 (Fig.~\textcolor{cyan}{13}), Nova’s ROC curves (Fig.~\textcolor{cyan}{13a}) demonstrate near-ideal performance across all ten classes. Each curve is tightly clustered in the top-left corner of the plot, exhibiting a shape that closely approaches the theoretical ideal ROC curve and corresponding to exceptionally high AUC values that consistently reach or are very close to 1.00, as explicitly indicated in the legend for each class. This near-perfect AUC across all classes, a measure of the overall quality of the classifier’s output, \textbf{visually}++++++++++++++++++++++++ and quantitatively demonstrates Nova’s outstanding discriminatory power on complex image data, achieving near-flawless separation between positive and negative instances for each specific category. The visual uniformity and consistent top-left adherence of Nova’s ROC curves across all classes underscore its remarkable class-balanced performance. In stark contrast, the ROC curves for Adam (Fig.~\textcolor{cyan}{13b}), RMSprop (Fig.~\textcolor{cyan}{13c}), and SGD (Fig.~\textcolor{cyan}{13d}) show progressively larger deviations from the ideal top-left corner and exhibit more bowing towards the diagonal, with correspondingly lower AUC values, indicating reduced discriminatory ability. Even Nadam’s ROC curves (Fig.~\textcolor{cyan}{13e}), while performing well, show subtle visual shifts away from the ideal compared to Nova’s consistently near-perfect curves, highlighting Nova’s nuanced advantage.
+%
+%On MNIST (Fig.~\textcolor{cyan}{14}), a dataset where high performance is generally expected, all adaptive optimizers achieve remarkably high performance with ROC curves very close to ideal. However, even within this high-performing group, Nova’s ROC curves (Fig.~\textcolor{cyan}{14a}) are virtually indistinguishable from the ideal, precisely hugging the top-left corner with exceptional tightness and achieving perfect AUC scores of 1.000 for every digit class (0-9). This visually represents the absolute pinnacle of classification accuracy and discriminatory power on MNIST. While Adam (Fig.~\textcolor{cyan}{14b}) and Nadam (Fig.~\textcolor{cyan}{14e}) also achieve very high AUCs, often reaching 1.000 for most classes, Nova’s curves visually suggest an infinitesimally tighter adherence to the ideal, indicative of slightly better-calibrated prediction probabilities. SGD’s ROC curves (Fig.~\textcolor{cyan}{14d}), while significantly improved from CIFAR-10, still exhibit a slightly more noticeable deviation from the ideal top-left corner compared to Nova and the other adaptive optimizers on MNIST, indicating a marginally reduced level of discriminatory power.
+%
+%The ROC curves for SST-2 (Fig.~\textcolor{cyan}{15}) further underscore Nova’s strong discriminatory capabilities on text data and binary classification tasks. Nova’s curves for both the positive (Fig.~\textcolor{cyan}{15a}) and negative (Fig.~\textcolor{cyan}{15b}) sentiment classes are positioned closer to the top-left corner with higher AUC values compared to other optimizers, indicating its superior ability to distinguish effectively between positive and negative sentiments across different classification thresholds. Although specific ROC curves were not provided in the text for noisy MNIST, the high classification metrics achieved by Nova on this dataset (Table \textcolor{cyan}{17}) strongly imply that its discriminatory power is maintained at a high level even in the presence of noise, further supporting its robustness.
+%
+%The comprehensive ROC curve analysis across CIFAR-10, MNIST, and SST-2, consistently showing Nova achieving near-ideal curves and the highest AUC values, provides definitive visual and quantitative proof of Nova’s exceptional classification excellence and discriminatory power. Its ability to consistently achieve these high standards across diverse datasets highlights the effectiveness of its combined optimization mechanisms in producing models with superior predictive capabilities.  The code and additional experimental results related to this paper are publicly available at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+%
+
+
+\section{Conclusion}\label{Sec 7}
+
+The Nova optimizer represents a significant advancement in deep learning optimization by synergistically combining adaptive gradient scaling, Look-ahead Nesterov momentum, AMSGrad-style moment correction, and decoupled weight decay. This novel integration enables faster and more stable convergence, improved generalization, and superior classification accuracy across diverse datasets and tasks such as CIFAR-10, MNIST, SST-2, and noisy MNIST.
+
+Key strengths of Nova include:
+\begin{itemize}
+    \item \textbf{Faster and more stable convergence} achieved by dampening oscillations and preventing vanishing learning rates.
+    \item \textbf{Enhanced generalization} due to decoupled weight decay, leading to significantly higher test accuracies.
+    \item \textbf{Robust classification performance} validated through detailed metrics, confusion matrices, and ROC curves.
+    \item \textbf{Resilience to noise and data variability}, effective on both image and text modalities.
+    \item \textbf{Reduced hyperparameter sensitivity}, simplifying practical use.
+\end{itemize}
+
+Nova effectively addresses major challenges in optimization such as instability, overfitting, sparse gradients, and hyperparameter tuning. Its practical advantages make it suitable for complex image analysis, natural language processing, federated learning, and deployment in resource-constrained environments.
+
+Notable limitations include a slightly higher computational cost and the need for further evaluation on non-image data types and extreme hyperparameter settings.
+
+Future research directions involve:
+\begin{itemize}
+    \item Scaling Nova to very large models and distributed training frameworks.
+    \item Extending evaluation to diverse data modalities and tasks, including medical imaging, financial forecasting, and reinforcement learning.
+    \item Enhancing computational efficiency and developing adaptive hyperparameter tuning mechanisms.
+    \item Conducting deeper theoretical analyses of convergence behavior.
+    \item Assessing robustness under adversarial conditions and in security-sensitive applications.
+\end{itemize}
+
+In conclusion, Nova sets a new state-of-the-art in optimizer design, demonstrating consistent superiority in speed, generalization, and stability across multiple benchmarks. Its code and experimental results are publicly accessible at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+%
+%
+%The Nova optimizer represents a substantial and pivotal advancement in the field of deep learning optimization. By uniquely and synergistically integrating adaptive gradient scaling, Look-ahead Nesterov momentum, AMSGrad-style moment correction, and decoupled weight decay, Nova effectively addresses and comprehensively overcomes critical limitations inherent in existing optimization algorithms. This novel and cohesive synthesis of established techniques results in demonstrably superior convergence speed, significantly enhanced generalization capabilities, and greater training stability across a wide spectrum of deep learning tasks and diverse datasets. A comprehensive empirical evaluation across four challenging benchmarks—including the image classification datasets CIFAR-10 and MNIST, the text sentiment analysis dataset SST-2, and the noisy MNIST variant provides compelling and consistent evidence that Nova consistently outperforms or significantly surpasses state-of-the-art optimizers.
+%
+%\begin{itemize}
+%\item \textbf{Superior convergence speed and stability:} As unequivocally demonstrated by the learning curves
+%(Figs.~\textcolor{cyan}{3}, \textcolor{cyan}{4}, \textcolor{cyan}{5}, and \textcolor{cyan}{6}) and the consistently lower loss metrics (Tables \textcolor{cyan}{11}, \textcolor{cyan}{13}, \textcolor{cyan}{15}, and \textcolor{cyan}{17}), Nova achieves
+%significantly faster and more stable convergence compared to evaluated optimizers, particularly on
+%complex and challenging datasets like CIFAR-10 and SST-2. This is a direct consequence of its
+%Look-ahead Nesterov momentum which dampens oscillations and accelerates progress towards the
+%minimum, and AMSGrad stabilization which prevents the vanishing learning rate problem that can
+%stall convergence in other adaptive methods.
+%
+%\item \textbf{Enhanced generalization performance with decoupled weight decay:} Nova consistently obtains
+%higher test accuracies across all evaluated datasets (Tables~\textcolor{cyan}{11}, \textcolor{cyan}{13}, \textcolor{cyan}{15}, and \textcolor{cyan}{17}). The substantial
+%margin of improvement on CIFAR-10 (90.01\% test accuracy vs. Adam’s 83.14\%) and its strong
+%performance on SST-2 (82.00\% test accuracy) and noisy MNIST (96.58\% test accuracy) provide
+%strong evidence of its superior ability to generalize effectively to unseen and perturbed data. This
+%enhanced generalization is significantly attributed to the incorporation of decoupled weight decay,
+%which effectively regularizes the model without interfering with adaptive gradient updates, leading to improved model capacity and reduced overfitting.
+%
+%\item \textbf{Outstanding classification accuracy and discriminatory power validated by visual analysis:} Detailed
+%analysis of classification metrics (Tables \textcolor{cyan}{12}, \textcolor{cyan}{14}, \textcolor{cyan}{16}, and \textcolor{cyan}{17}), visually compelling confusion matrices
+%(Figs. \textcolor{cyan}{9}, \textcolor{cyan}{10}, \textcolor{cyan}{11}, and \textcolor{cyan}{12}), and informative ROC curves (Figs. \textcolor{cyan}{13}, \textcolor{cyan}{14}, and \textcolor{cyan}{15}) consistently demonstrate
+%Nova’s robust and balanced classification performance. Its ability to achieve exceptionally clear class
+%separation, as seen in the confusion matrices, and high AUC values approaching or reaching 1.00, even
+%on challenging datasets and under noisy conditions, underscores its superior discriminatory power and
+%the reliability of its predictions.
+%
+%\item \textbf{Robustness to diverse data characteristics and noise:} The successful application and leading performance
+%of Nova on SST-2 and noisy MNIST specifically highlight its effectiveness in handling different data
+%modalities (text) and its remarkable resilience to data perturbations (noise). This robustness is a key
+%advantage for real-world applications where data is often imperfect or varies in nature.
+%
+%\item \textbf{Reduced hyperparameter sensitivity for improved practicality:} The evaluation on MNIST with
+%varying hyperparameter combinations (Table \textcolor{cyan}{18}) strongly suggests that Nova is less sensitive to the
+%specific choice of its primary hyperparameters compared to the notable sensitivity of many other
+%optimizers. This reduced dependence on meticulous hyperparameter tuning simplifies the optimization
+%process significantly, making Nova a more practical and accessible tool for practitioners in diverse
+%settings.
+%\end{itemize}
+%
+%These compelling findings align directly with and comprehensively fulfill the critical research objectives
+%outlined at the outset of this study. Nova successfully addresses the challenges of suboptimal convergence
+%and instability through its enhanced momentum and stabilization mechanisms, effectively counters overfitting
+%and improves generalization via stable moment estimation and decoupled weight decay, handles sparse and
+%imbalanced data efficiently with its adaptive gradient scaling, optimizes weight regularization by separating
+%it from gradient updates, and significantly reduces sensitivity to hyperparameters through its hybrid learning
+%rate adjustment.
+%
+%The implications and significance of Nova’s contributions extend significantly beyond theoretical advancements,
+%offering tangible and practical advantages for real-world deep learning applications. Its robust and consistently
+%superior performance across a range of tasks positions it as a preferred optimizer for complex image analysis
+%tasks, such as advanced medical imaging where high accuracy is paramount, and challenging handwritten
+%character recognition across diverse scripts. The successful application and leading performance on SST-
+%2 clearly demonstrate its potential in various natural language processing domains, including sentiment
+%analysis, text classification, and potentially more complex sequence processing tasks. Furthermore, the
+%integration of decoupled weight decay makes Nova particularly valuable for scenarios requiring stringent
+%weight constraints or improved regularization, such as federated learning environments and deployment on
+%resource-constrained edge devices. Its efficiency in handling sparse data, a feature provided by adaptive
+%gradient scaling, is highly beneficial for applications involving large-scale text embeddings, recommender
+%systems, and financial data analysis.
+%
+%While Nova demonstrably achieves exceptional performance and addresses key limitations of existing
+%optimizers, it is important to acknowledge certain limitations that warrant dedicated future investigation.
+%The computational overhead of Nova is noted to be slightly higher compared to some of the more basic
+%optimizers like Adam and SGD (Table \textcolor{cyan}{15}). While the performance gains often justify this, it could be
+%a consideration in severely resource-constrained environments or in scenarios requiring extremely rapid
+%iteration cycles. The primary focus of the current evaluation, while comprehensive within its scope, has been
+%predominantly on image classification and a specific sentiment analysis task; further extensive exploration
+%of Nova’s applicability and performance on a wider array of non-image modalities (e.g., tabular data, time
+%series analysis) and tasks with inherently sparse gradients (e.g., various reinforcement learning algorithms) is
+%essential to fully understand the breadth and limits of its utility. Although Nova exhibits reduced sensitivity
+%to hyperparameters, a more exhaustive and systematic analysis of its behavior and optimal performance
+%under extreme or atypical hyperparameter configurations, or with sophisticated learning rate scheduling
+%strategies, could provide further valuable insights.
+%
+%Building upon the highly promising results of this study, we propose several compelling and impactful
+%directions for future research:
+%\begin{itemize}
+%\item Conduct extensive evaluations and scalability analyses to investigate Nova’s performance and computational
+%efficiency on very large-scale deep learning models, such as massive transformer networks, and within
+%distributed training setups, which are increasingly common in modern AI research and deployment.
+%\item Perform rigorous and broad assessments of Nova’s performance on a wider and more diverse range
+%of non-image datasets and tasks to confirm its broad applicability and identify domains where its
+%advantages are most pronounced. This should include, but not be limited to, complex medical imaging
+%segmentation tasks, high-frequency financial time series forecasting, and various complex reinforcement
+%learning environments where sparse rewards and credit assignment challenges are prevalent.
+%\item Develop and investigate advanced techniques aimed at further optimizing Nova’s computational efficiency
+%without sacrificing its performance benefits. Additionally, explore the potential for developing automated
+%or dynamic mechanisms for the adaptive adjustment of its internal hyperparameters during the training
+%process to further reduce the burden of manual tuning and enhance ease of use.
+%\item Undertake deeper theoretical analysis to fully elucidate the mathematical properties governing Nova’s
+%convergence behavior, particularly in highly non-convex optimization landscapes characteristic of
+%deep learning. The goal would be to provide stronger theoretical guarantees for its convergence and
+%optimality properties.
+%\item Systematically evaluate Nova’s resilience and performance in the context of adversarial attacks and
+%explore its effectiveness when combined with adversarial training techniques to understand its potential
+%in security-sensitive machine learning applications.
+%\end{itemize}
+%
+%In conclusion, the Nova optimizer, through its novel and synergistic integration of key optimization techniques,
+%stands as a state-of-the-art method for enhancing convergence speed, generalization, and stability in deep
+%learning. Its empirical success across diverse and challenging tasks, coupled with its strong theoretical
+%underpinnings and practical advantages in terms of reduced hyperparameter sensitivity, positions it favorably
+%against existing approaches and highlights its significant potential to advance the field. While continued
+%research is necessary to further refine its efficiency and broaden its validated applicability, Nova’s demonstrated
+%and consistent superiority across multiple tasks underscores its transformative potential in deep learning
+%research and practice. The code and additional experimental results related to this paper are publicly available
+%at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+
+
+
+
+%
+%\subsection{Analysis of Hyperparameter Sensitivity: Demonstrating Nova’s Practical Advantage}
+%Table \textcolor{cyan}{18} presents the performance of the Nova optimizer on the MNIST dataset under various combinations of key hyperparameters, including learning rate ($\eta$), momentum decay rates ($\beta_1$, $\beta_2$), and weight decay ($\lambda$). The results demonstrate that Nova generally maintains high and competitive performance across the tested range of these hyperparameters. While marginal variations in performance exist between different combinations (e.g., test accuracy ranging from 98.44\% to 99.21\%), the performance remains consistently high and robust. This relative insensitivity to the specific choice of hyperparameters, especially when compared to traditional optimizers like SGD which are highly sensitive to learning rate tuning, represents a significant practical advantage of Nova. Reduced hyperparameter sensitivity simplifies the optimization process, reduces the need for extensive and time-consuming hyperparameter tuning, and makes Nova more accessible and user-friendly for practitioners. This robustness stems from Nova’s adaptive nature, where per-parameter learning rates and moment estimates dynamically adjust based on the gradients, making the optimization process less dependent on a single global learning rate or fixed momentum values.
+%
+%In summary, the extensive experimental results and in-depth analyses conducted across four diverse and challenging datasets and evaluated using a comprehensive suite of performance metrics and visual tools collectively provide overwhelming evidence of the unequivocal superiority of the Nova optimization algorithm. Its unique and synergistic integration of Look-ahead Nesterov Momentum, AMSGrad-style moment correction, and decoupled weight decay effectively addresses and mitigates key limitations of existing optimizers. This results in consistently faster and more stable convergence, significantly improved generalization capabilities, robust handling of different data types and noise, and a practical advantage in:white terms of reduced sensitivity to hyperparameters, firmly establishing Nova as a state-of-the-art solution for deep learning optimization. The code and additional experimental results related to this paper are publicly available at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+
+
+
+
+
+
+%\section{Discussion}\label{Sec 6}
+%
+%This study presents a comprehensive and rigorous comparative analysis of the proposed Nova optimization algorithm against five widely recognized and state-of-the-art optimizers: Adam, RMSprop, SGD, and Nadam. The evaluation was systematically conducted across four diverse and challenging benchmark datasets: CIFAR-10, MNIST, SST-2, and noisy MNIST. To ensure a fair and relevant comparison, established and effective network architectures were utilized, including a modified ResNet-18 tailored for CIFAR-10 image classification, LeNet-5 for the MNIST and noisy MNIST datasets, and a robust text classification model for the SST-2 sentiment analysis task. Our meticulously designed evaluation framework incorporated a broad spectrum of quantitative performance metrics, encompassing training loss, training accuracy, validation loss, validation accuracy, test loss, test accuracy, precision, recall, and F1-score. Complementing this quantitative assessment, we performed in-depth qualitative analyses by examining learning curves, confusion matrices, and Receiver Operating Characteristic (ROC) curves. The convergence of evidence from these multi-faceted evaluations unequivocally and demonstrably establishes the profound and consistent advantages of the Nova optimizer, positioning it as a leading optimization method capable of achieving superior performance across diverse deep learning applications and challenging data conditions.
+%
+%\subsection{Analysis of Performance Metrics: Quantitative Evidence of Nova's Superiority}
+%
+%The quantitative performance metrics, comprehensively detailed in Tables \ref{tab:cifar-10_main}, \ref{tab:cifar-10_prf}, \ref{tab:mnist_main}, and \ref{tab:mnist_prf} for the CIFAR-10 and MNIST datasets, provide compelling and irrefutable evidence of Nova's superior optimization capabilities. On the more complex and visually diverse CIFAR-10 image classification dataset, Nova demonstrably and consistently surpassed all evaluated alternatives in both minimizing the objective function loss and maximizing model accuracy. As clearly shown in Table \ref{tab:cifar-10_main}, Nova achieved the lowest training loss (0.1550), validation loss (0.3180), and test loss (0.3345). This substantial and significant reduction in loss values, particularly the test loss which is a strong indicator of generalization, signifies Nova's enhanced ability to effectively navigate the intricate and high-dimensional non-convex loss landscape of CIFAR-10 and converge towards more optimal minima compared to Adam (test loss of 0.5069), Nadam (0.5718), RMSprop (1.0597), and SGD (1.1325). This superiority in loss minimization is attributed to Nova's synergistic integration of Look-ahead Nesterov Momentum, which reduces oscillations and accelerates convergence by anticipating future gradients, and AMSGrad stabilization, which prevents premature decay of the learning rate, ensuring sustained progress towards the minimum.
+%
+%Beyond loss minimization, Nova set a new and significantly higher benchmark for accuracy on the CIFAR-10 dataset, attaining a test accuracy of 90.01\% (Table \ref{tab:cifar-10_main}). This performance represents a substantial leap in generalization capabilities, unequivocally surpassing the test accuracies achieved by Adam (83.14\%), Nadam (80.85\%), RMSprop (61.01\%), and SGD (58.57\%). The notable gap in accuracy, especially when compared to widely used optimizers like Adam and Nadam, underscores the effectiveness of Nova's combined mechanisms, including decoupled weight decay which promotes better generalization by applying regularization directly to the weights rather than entangling it with gradient updates. The classification metrics presented in Table \ref{tab:cifar-10_prf} further solidify Nova's commanding lead on CIFAR-10, with the highest precision (89.98\%), recall (90.01\%), and F1-score (89.99\%). These metrics collectively affirm Nova's unmatched ability to deliver balanced and highly effective classification outcomes, minimizing both false positives and false negatives on this challenging image dataset.
+%
+%Even on the less intricate MNIST dataset, where high performance is generally more easily attainable and differences among optimizers can be less pronounced, Nova resolutely maintained its position of excellence (Tables \ref{tab:mnist_main} and \ref{tab:mnist_prf}). Nova achieved the absolute minimal losses across all phases (Training Loss: 0.0204, Validation Loss: 0.0370, Test Loss: 0.0295) and maximal accuracies (Training Accuracy: 99.33\%, Validation Accuracy: 98.86\%, Test Accuracy: 98.95\%) on MNIST. While Nadam exhibited very competitive performance on MNIST, closely approaching Nova's metrics, Nova still retained the definitive edge in achieving the absolute best performance. This consistent performance on a simpler dataset demonstrates that Nova's benefits are not limited to complex tasks but also translate to efficiency and precision even when the optimization problem is less challenging. Table \ref{tab:mnist_prf} further details the classification metrics on MNIST, showing Nova with the highest precision (98.95\%), recall (98.94\%), and F1-score (98.94\%), reinforcing its quantitative superiority in classification outcomes. The high performance of all adaptive optimizers on MNIST, even with SGD achieving a respectable F1-score, highlights the dataset's simplicity but does not detract from Nova's consistent leadership and demonstrable advantages, particularly evident on more challenging tasks.
+%
+%The evaluation was extended to the SST-2 dataset for binary sentiment classification, effectively showcasing Nova's superiority on text-based tasks (Tables \ref{tab:sst-2_main} and \ref{tab:sst-2_prf}). Nova again demonstrated significantly superior performance, achieving the best test accuracy (82.00\%), precision (82.11\%), recall (82.12\%), and F1-score (82.11\%) among all evaluated optimizers. This performance is markedly higher than Adam (test accuracy 66.28\%), AdamW (81.65\%), RMSprop (65.94\%), SGD (54.47\%), and Nadam (66.17\%). Nova's strong performance on SST-2 is attributable to its adaptive gradient scaling mechanism, which is particularly beneficial for handling sparse gradients often encountered in text data, and its robust momentum and stabilization components that ensure effective learning dynamics on sequential data.
+%
+%Furthermore, the results on the noisy MNIST dataset (Table \ref{tab:mnist_noisy_main}) unequivocally underscore Nova's exceptional robustness to corrupted data. Despite the introduction of significant Gaussian noise, Nova maintained a remarkably high test accuracy of 96.58\%, coupled with strong precision (96.56\%), recall (96.56\%), and F1-score (96.56\%). This performance was notably superior to or competitive with other adaptive optimizers like AdamW (96.14\%) and Adam (96.17\%), and significantly better than SGD (91.32\%). The ability of Nova to maintain high performance under noisy conditions is a crucial advantage, stemming from its AMSGrad stabilization, which provides more reliable second-moment estimates, and its overall robust update rule that is less susceptible to erratic gradients caused by noise.
+%
+%The consistent and pronounced quantitative superiority of Nova across all four diverse datasets and a comprehensive suite of performance metrics provides overwhelming and irrefutable evidence of its effectiveness, robustness, and broad applicability. The detailed data presented in Tables \ref{tab:cifar-10_main}, \ref{tab:cifar-10_prf}, \ref{tab:mnist_main}, \ref{tab:mnist_prf}, \ref{tab:sst-2_main}, \ref{tab:sst-2_prf}, and \ref{tab:mnist_noisy_main} collectively establish Nova as a state-of-the-art optimizer, particularly well-suited for complex and challenging tasks requiring high accuracy, strong generalization, and robust performance across various data types and conditions.
+%
+%\subsection{Analysis of Learning Curves and Bar Plots: Visualizing Nova's Training Dynamics}
+%
+%The learning curves presented in Figures \ref{017}, \ref{018}, \ref{019}, and \ref{020} offer compelling visual corroboration of the quantitative results and provide valuable insights into the training dynamics and convergence behavior of each optimizer. On CIFAR-10 (Fig.~\ref{017}), Nova's loss curve (represented by blue and cyan lines) consistently exhibits the most rapid and pronounced descent from the initial training epochs, quickly reaching a demonstrably lower plateau compared to all other optimizers. This visual trajectory unequivocally confirms Nova's faster convergence speed, a direct benefit of its Look-ahead Nesterov Momentum which anticipates gradient changes and reduces oscillations. Correspondingly, Nova's accuracy curve (Fig.~\ref{017}) ascends most rapidly and stabilizes at the highest accuracy level, visually reinforcing its superior asymptotic performance and generalization on complex image data. In stark contrast, the learning curves for SGD (grey lines) and RMSprop (red lines) on CIFAR-10 show significantly sluggish convergence and stagnate at markedly inferior performance levels, visually demonstrating their limitations on this dataset.
+%
+%On the MNIST dataset (Fig.~\ref{018}), while all adaptive optimizers exhibit fast convergence on this simpler dataset, Nova's learning curves (blue lines) demonstrate exceptionally rapid convergence to near-perfect performance. Although visually very close to Nadam (purple lines), Nova's curves often show a subtle visual edge in terms of speed and stability during the later stages of training, hinting at slightly more efficient optimization.
+%
+%The learning curves for SST-2 (Fig.~\ref{019}) and noisy MNIST (Fig.~\ref{020}) further highlight Nova's adaptability and robustness across different data modalities and conditions. On SST-2, Nova's curves show faster initial convergence and consistently reach a higher final accuracy compared to most competitors, visually indicating its efficiency in optimizing models for text classification. On noisy MNIST (Fig.~\ref{020}), Nova's learning curves demonstrate more stable training trajectories and achieve higher final performance in the presence of noise, visually validating its resilience and the effectiveness of its stabilization mechanisms.
+%
+%The bar plots presented in Fig.~\ref{022} provide a clear, concise, and impactful visual summary of the test accuracies achieved by each optimizer across the evaluated datasets. The plots for CIFAR-10 and MNIST (Fig.~\ref{021}) clearly show Nova with the tallest bar, definitively signifying the highest test accuracy achieved. Similarly, the bar plots for SST-2 (Fig.~\ref{022}a) and noisy MNIST (Fig.~\ref{022}b) consistently confirm Nova's leading or highly competitive performance in terms of test accuracy, often with a visible margin over other optimizers. This unified visual representation effectively encapsulates Nova's overall superior performance across diverse tasks and datasets, making its advantages immediately apparent.
+%
+%\subsection{Analysis of Confusion Matrices: Granular Insight into Nova's Classification Precision}
+%
+%Analysis of the confusion matrices, comprehensively presented in Figures \ref{fig:Conf1}, \ref{fig:Conf2}, \ref{fig:Conf3}, and \ref{fig:Conf4}, provides crucial granular insights into the class-by-class breakdown of classification performance. This allows for a deeper understanding of where each optimizer excels or struggles and visually reinforces the quantitative metrics by illustrating the patterns of correct and incorrect classifications.
+%
+%On CIFAR-10 (Fig.~\ref{fig:Conf1}), Nova's confusion matrix (Fig.~\ref{fig:Conf1}a) exhibits a remarkably strong, sharply defined, and intensely saturated diagonal. This vivid diagonal is a direct and powerful visual manifestation of Nova's high and balanced accuracy across all ten CIFAR-10 classes, indicating a predominantly correct classification rate for each category with minimal confusion between different classes. The off-diagonal elements in Nova's matrix are notably faint and muted, signifying a negligibly low rate of misclassifications. This visually clean matrix with a dominant diagonal stands in stark contrast to the matrices of other optimizers. For instance, Adam's matrix (Fig.~\ref{fig:Conf1}b), while showing a discernible diagonal, exhibits reduced color intensity and a noticeably higher presence of off-diagonal elements, indicating lower overall accuracy and increased class confusion relative to Nova. The confusion matrices for RMSprop (Fig.~\ref{fig:Conf1}c) and SGD (Fig.~\ref{fig:Conf1}d) show progressively more diffuse patterns with weaker diagonals and significantly more intense off-diagonal entries, visually demonstrating their substantial struggles in accurately classifying CIFAR-10 images and their higher rates of misclassification across multiple classes.
+%
+%For MNIST (Fig.~\ref{fig:Conf2}), even on this simpler dataset where high accuracies are generally achievable by adaptive methods, Nova's confusion matrix (Fig.~\ref{fig:Conf2}a) stands out as exhibiting near-perfect classification performance. The diagonal is exceptionally dominant and intensely saturated, even more pronounced than in the CIFAR-10 matrices, visually signifying Nova's near-flawless accuracy across all MNIST digits (0-9). The off-diagonal elements in Nova's MNIST confusion matrix are almost imperceptible, appearing as faint traces, visually confirming minimal misclassifications and exceptional precision in digit recognition. While other adaptive optimizers like Adam (Fig.~\ref{fig:Conf2}b) and Nadam (Fig.~\ref{fig:Conf2}e) also show strong diagonals, Nova's matrix visually suggests a subtle yet persistent edge in achieving the absolute highest degree of class separation and minimizing even rare misclassifications.
+%
+%The confusion matrices for SST-2 (Fig.~\ref{fig:Conf3}) and noisy MNIST (Fig.~\ref{fig:Conf4}) further demonstrate Nova's robust and precise classification capabilities under different conditions. On SST-2 (Fig.~\ref{fig:Conf3}a), Nova's matrix shows a clear and strong diagonal for both the positive and negative sentiment classes, indicating effective and balanced discrimination. The matrices for other optimizers on SST-2 exhibit more off-diagonal elements, particularly between the positive and negative classes, signifying higher rates of false positives and false negatives. On noisy MNIST (Fig.~\ref{fig:Conf4}a), Nova's confusion matrix maintains a strong and well-defined diagonal despite the presence of significant noise, visually confirming its resilience and superior ability to correctly classify digits even under perturbed conditions, clearly outperforming many other optimizers whose matrices show more diffused patterns and increased off-diagonal noise.
+%
+%The consistent and compelling visual superiority of Nova's confusion matrices across all evaluated datasets, characterized by their strong, sharply defined diagonals and minimal off-diagonal noise, provides powerful intuitive evidence that reinforces the quantitative findings. This visual analysis underscores Nova's exceptional and balanced classification performance, demonstrating its ability to achieve precise class separation and minimize misclassifications across diverse data types and challenging scenarios, solidifying its position as a preeminent optimizer for classification tasks.
+%
+%\subsection{Analysis of ROC and AUC Curves: Threshold-Independent Validation of Nova's Discriminatory Power}
+%
+%The Receiver Operating Characteristic (ROC) curves and their corresponding Area Under the Curve (AUC) values, presented in Figs. \ref{fig:roc1}, \ref{fig:roc2}, and \ref{fig:roc3}, offer a threshold-independent assessment of the optimizers' ability to discriminate between classes. This analysis provides further crucial quantitative and visual evidence that strongly supports Nova's superiority in classification performance.
+%
+%On CIFAR-10 (Fig.~\ref{fig:roc1}), Nova's ROC curves (Fig.~\ref{fig:roc1}a) demonstrate near-ideal performance across all ten classes. Each curve is tightly clustered in the top-left corner of the plot, exhibiting a shape that closely approaches the theoretical ideal ROC curve and corresponding to exceptionally high AUC values that consistently reach or are very close to 1.00, as explicitly indicated in the legend for each class. This near-perfect AUC across all classes, a measure of the overall quality of the classifier's output, visually and quantitatively demonstrates Nova's outstanding discriminatory power on complex image data, achieving near-flawless separation between positive and negative instances for each specific category. The visual uniformity and consistent top-left adherence of Nova's ROC curves across all classes underscore its remarkable class-balanced performance. In stark contrast, the ROC curves for Adam (Fig.~\ref{fig:roc1}b), RMSprop (Fig.~\ref{fig:roc1}c), and SGD (Fig.~\ref{fig:roc1}d) show progressively larger deviations from the ideal top-left corner and exhibit more bowing towards the diagonal, with correspondingly lower AUC values, indicating reduced discriminatory ability. Even Nadam's ROC curves (Fig.~\ref{fig:roc1}e), while performing well, show subtle visual shifts away from the ideal compared to Nova's consistently near-perfect curves, highlighting Nova's nuanced advantage.
+%
+%On MNIST (Fig.~\ref{fig:roc2}), a dataset where high performance is generally expected, all adaptive optimizers achieve remarkably high performance with ROC curves very close to ideal. However, even within this high-performing group, Nova's ROC curves (Fig.~\ref{fig:roc2}a) are virtually indistinguishable from the ideal, precisely hugging the top-left corner with exceptional tightness and achieving perfect AUC scores of 1.000 for every digit class (0-9). This visually represents the absolute pinnacle of classification accuracy and discriminatory power on MNIST. While Adam (Fig.~\ref{fig:roc2}b) and Nadam (Fig.~\ref{fig:roc2}e) also achieve very high AUCs, often reaching 1.000 for most classes, Nova's curves visually suggest an infinitesimally tighter adherence to the ideal, indicative of slightly better-calibrated prediction probabilities. SGD's ROC curves (Fig.~\ref{fig:roc2}d), while significantly improved from CIFAR-10, still exhibit a slightly more noticeable deviation from the ideal top-left corner compared to Nova and the other adaptive optimizers on MNIST, indicating a marginally reduced level of discriminatory power.
+%
+%The ROC curves for SST-2 (Fig.~\ref{fig:roc3}) further underscore Nova's strong discriminatory capabilities on text data and binary classification tasks. Nova's curves for both the positive (Fig.~\ref{fig:roc3}a) and negative (Fig.~\ref{fig:roc3}b) sentiment classes are positioned closer to the top-left corner with higher AUC values compared to other optimizers, indicating its superior ability to distinguish effectively between positive and negative sentiments across different classification thresholds. Although specific ROC curves were not provided in the text for noisy MNIST, the high classification metrics achieved by Nova on this dataset (Table \ref{tab:mnist_noisy_main}) strongly imply that its discriminatory power is maintained at a high level even in the presence of noise, further supporting its robustness.
+%
+%The comprehensive ROC curve analysis across CIFAR-10, MNIST, and SST-2, consistently showing Nova achieving near-ideal curves and the highest AUC values, provides definitive visual and quantitative proof of Nova's exceptional classification excellence and discriminatory power. Its ability to consistently achieve these high standards across diverse datasets highlights the effectiveness of its combined optimization mechanisms in producing models with superior predictive capabilities.
+%
+%
+%
+%\section{Conclusion}
+%\label{Sec 7}
+%
+%The Nova optimizer represents a substantial and pivotal advancement in the field of deep learning optimization. By uniquely and synergistically integrating adaptive gradient scaling, Look-ahead Nesterov momentum, AMSGrad-style moment correction, and decoupled weight decay, Nova effectively addresses and comprehensively overcomes critical limitations inherent in existing optimization algorithms. This novel and cohesive synthesis of established techniques results in demonstrably superior convergence speed, significantly enhanced generalization capabilities, and greater training stability across a wide spectrum of deep learning tasks and diverse datasets.
+%
+%The comprehensive empirical evaluation conducted across four diverse and challenging benchmarks—including the image classification datasets CIFAR-10 and MNIST, the text sentiment analysis dataset SST-2, and the noisy MNIST dataset provides compelling and consistent evidence that Nova consistently outperforms or significantly surpasses state-of-the-art optimizers. The key findings derived from this extensive study are summarized as follows, emphatically highlighting Nova's advantages:
+%\begin{itemize}
+%    \item \textbf{Superior convergence speed and stability:} As unequivocally demonstrated by the learning curves (Figs. \ref{017}, \ref{018}, \ref{019}, and \ref{020}) and the consistently lower loss metrics (Tables \ref{tab:cifar-10_main}, \ref{tab:mnist_main}, \ref{tab:sst-2_main}, and \ref{tab:mnist_noisy_main}), Nova achieves significantly faster and more stable convergence compared to evaluated optimizers, particularly on complex and challenging datasets like CIFAR-10 and SST-2. This is a direct consequence of its Look-ahead Nesterov momentum which dampens oscillations and accelerates progress towards the minimum, and AMSGrad stabilization which prevents the vanishing learning rate problem that can stall convergence in other adaptive methods.
+%    \item \textbf{Enhanced generalization performance with decoupled weight decay:} Nova consistently obtains higher test accuracies across all evaluated datasets (Tables \ref{tab:cifar-10_main}, \ref{tab:mnist_main}, \ref{tab:sst-2_main}, and \ref{tab:mnist_noisy_main}). The substantial margin of improvement on CIFAR-10 (90.01\% test accuracy vs. Adam's 83.14\%) and its strong performance on SST-2 (82.00\% test accuracy) and noisy MNIST (96.58\% test accuracy) provide strong evidence of its superior ability to generalize effectively to unseen and perturbed data. This enhanced generalization is significantly attributed to the incorporation of decoupled weight decay, which effectively regularizes the model without interfering with the adaptive gradient updates, leading to better model capacity and reduced overfitting.
+%    \item \textbf{Outstanding classification accuracy and discriminatory power validated by visual analysis:} Detailed analysis of classification metrics (Tables \ref{tab:cifar-10_prf}, \ref{tab:mnist_prf}, \ref{tab:sst-2_prf}, and \ref{tab:mnist_noisy_main}), visually compelling confusion matrices (Figs. \ref{fig:Conf1}, \ref{fig:Conf2}, \ref{fig:Conf3}, and \ref{fig:Conf4}), and informative ROC curves (Figs. \ref{fig:roc1}, \ref{fig:roc2}, and \ref{fig:roc3}) consistently demonstrate Nova's robust and balanced classification performance. Its ability to achieve exceptionally clear class separation, as seen in the confusion matrices, and high AUC values approaching or reaching 1.00, even on challenging datasets and under noisy conditions, underscores its superior discriminatory power and the reliability of its predictions.
+%    \item \textbf{Robustness to diverse data characteristics and noise:} The successful application and leading performance of Nova on SST-2 and noisy MNIST specifically highlight its effectiveness in handling different data modalities (text) and its remarkable resilience to data perturbations (noise). This robustness is a key advantage for real-world applications where data is often imperfect or varies in nature.
+%    \item \textbf{Reduced hyperparameter sensitivity for improved practicality:} The evaluation on MNIST with varying hyperparameter combinations (Table \ref{tab:nova_mnistcomb}) strongly suggests that Nova is less sensitive to the specific choice of its primary hyperparameters compared to the notable sensitivity of many other optimizers. This reduced dependence on meticulous hyperparameter tuning simplifies the optimization process significantly, making Nova a more practical and accessible tool for practitioners in diverse settings.
+%\end{itemize}
+%
+%These compelling findings align directly with and comprehensively fulfill the critical research objectives outlined at the outset of this study. Nova successfully addresses the challenges of suboptimal convergence and instability through its enhanced momentum and stabilization mechanisms, effectively counters overfitting and improves generalization via stable moment estimation and decoupled weight decay, handles sparse and imbalanced data efficiently with its adaptive gradient scaling, optimizes weight regularization by separating it from gradient updates, and significantly reduces sensitivity to hyperparameters through its hybrid learning rate adjustment.
+%
+%The implications and significance of Nova's contributions extend significantly beyond theoretical advancements, offering tangible and practical advantages for real-world deep learning applications. Its robust and consistently superior performance across a range of tasks positions it as a preferred optimizer for complex image analysis tasks, such as advanced medical imaging where high accuracy is paramount, and challenging handwritten character recognition across diverse scripts. The successful application and leading performance on SST-2 clearly demonstrate its potential in various natural language processing domains, including sentiment analysis, text classification, and potentially more complex sequence processing tasks. Furthermore, the integration of decoupled weight decay makes Nova particularly valuable for scenarios requiring stringent weight constraints or improved regularization, such as federated learning environments and deployment on resource-constrained edge devices. Its efficiency in handling sparse data, a feature provided by adaptive gradient scaling, is highly beneficial for applications involving large-scale text embeddings, recommender systems, and financial data analysis.
+%
+%While Nova demonstrably achieves exceptional performance and addresses key limitations of existing optimizers, it is important to acknowledge certain limitations that warrant dedicated future investigation. The computational overhead of Nova is noted to be slightly higher compared to some of the more basic optimizers like Adam and SGD (Table \ref{tab:sst-2_main}). While the performance gains often justify this, it could be a consideration in severely resource-constrained environments or in scenarios requiring extremely rapid iteration cycles. The primary focus of the current evaluation, while comprehensive within its scope, has been predominantly on image classification and a specific sentiment analysis task; further extensive exploration of Nova's applicability and performance on a wider array of non-image modalities (e.g., tabular data, time series analysis) and tasks with inherently sparse gradients (e.g., various reinforcement learning algorithms) is essential to fully understand the breadth and limits of its utility. Although Nova exhibits reduced sensitivity to hyperparameters, a more exhaustive and systematic analysis of its behavior and optimal performance under extreme or atypical hyperparameter configurations, or with sophisticated learning rate scheduling strategies, could provide further valuable insights.
+%
+%Building upon the highly promising results of this study, we propose several compelling and impactful directions for future research:
+%\begin{itemize}
+%    \item Conduct extensive evaluations and scalability analyses to investigate Nova's performance and computational efficiency on very large-scale deep learning models, such as massive transformer networks, and within distributed training setups, which are increasingly common in modern AI research and deployment.
+%    \item Perform rigorous and broad assessments of Nova's performance on a wider and more diverse range of non-image datasets and tasks to confirm its broad applicability and identify domains where its advantages are most pronounced. This should include, but not be limited to, complex medical imaging segmentation tasks, high-frequency financial time series forecasting, and various complex reinforcement learning environments where sparse rewards and credit assignment challenges are prevalent.
+%    \item Develop and investigate advanced techniques aimed at further optimizing Nova's computational efficiency without sacrificing its performance benefits. Additionally, explore the potential for developing automated or dynamic mechanisms for the adaptive adjustment of its internal hyperparameters during the training process to further reduce the burden of manual tuning and enhance ease of use.
+%    \item Undertake deeper theoretical analysis to fully elucidate the mathematical properties governing Nova's convergence behavior, particularly in highly non-convex optimization landscapes characteristic of deep learning. The goal would be to provide stronger theoretical guarantees for its convergence and optimality properties.
+%    \item Systematically evaluate Nova's resilience and performance in the context of adversarial attacks and explore its effectiveness when combined with adversarial training techniques to understand its potential in security-sensitive machine learning applications.
+%\end{itemize}
+%In conclusion, the Nova optimizer, through its novel and synergistic integration of key optimization techniques, stands as a state-of-the-art method for enhancing convergence speed, generalization, and stability in deep learning. Its empirical success across diverse and challenging tasks, coupled with its strong theoretical underpinnings and practical advantages in terms of reduced hyperparameter sensitivity, positions it favorably against existing approaches and highlights its significant potential to advance the field. While continued research is necessary to further refine its efficiency and broaden its validated applicability, Nova's demonstrated and consistent superiority across multiple tasks underscores its transformative potential in deep learning research and practice.
+%The code and additional experimental results related to this paper are publicly available at \url{https://github.com/Aliyar4061/Nova-Optimizer/tree/main}.
+%
+
+
+%\section{Supplementary Material}\label{Sec 8}
+%
+%\noindent The following supplementary materials are provided to support the main findings of this paper. They are submitted as separate files and are referenced within the manuscript as Online Resources.
+%
+%\vspace{0.5em}
+%\noindent\textbf{Online Resource~1} \\
+%
+%\textbf{Title:} Supplementary Figures and Tables for Detailed Evaluation of Nova Optimizer. \\
+%\textbf{Filename:} ESM\_1.pdf \\
+%\textbf{Description:} This file contains extended experimental results and figures referenced in the main text. It includes comparative results, ablation studies, and details not included in the manuscript due to space constraints. The contents are:
+%\begin{itemize}
+%\item \textbf{1.1 Time and Space Complexity of Common First-Order Optimizers}: Tables and figures summarizing the computational overhead of popular optimizers compared with Nova.
+%\item \textbf{1.2 Comparison of Performance Metrics of Nova with Other Optimizers}: Tabulated results including accuracy, precision, recall, F1-score, and runtime across multiple datasets.
+%\item \textbf{1.3 Learning Curves and Bar Plots}: Graphs depicting training/validation loss and accuracy for different optimizers and datasets.
+%\item \textbf{1.4 Confusion Matrices for CIFAR-10, MNIST, Noisy MNIST, and SST-2 Datasets}: Visual matrices showing classification performance across different models and datasets.
+%\item \textbf{1.5 ROC and AUC}: Receiver Operating Characteristic curves and Area Under the Curve values to evaluate binary classification performance.
+%\item \textbf{1.6 Analysis of Hyperparameter Sensitivity: Demonstrating Nova’s Practical Advantage}: A series of plots and tables showing how Nova performs under different hyperparameter settings.
+%\end{itemize}
+%
+%\vspace{0.5em}
+%\noindent\textbf{Online Resource~2}\label{or2} \\
+%
+%\textbf{Title:} Additional Comparative Visualizations and Data Samples. \\
+%\textbf{Filename:} ESM\_2.pdf \\
+%\textbf{Description:} This file contains further visualizations of Nova’s performance and comparative details, including:
+%\begin{itemize}
+%\item \textbf{1.1 Datasets}: Used datasets in the paper.
+%\item \textbf{1.2 Epoch-wise Validation Accuracy Comparisons}: Graphs comparing the validation accuracy over epochs for Nova and baselines.
+%\item \textbf{1.3 Evaluating the Performance of Various Optimizers on Some Well-Known Networks: A
+%Comparison with Nova }: Evaluating the Performance of Various Optimizers on Some Well-Known Networks: A
+%Comparison with Nova =======
+%\item \textbf{1.4 t-SNE and PCA Projections of Feature Space}: Dimensionality reduction visualizations showing separation between classes across optimizers.
+%\item \textbf{1.5 Dataset Samples and Augmented Inputs}: A visual gallery of clean and augmented inputs across training datasets for reproducibility.
+%\item \textbf{1.6 Kernel Weights and Activation Maps}: Visualizations of learned filters and activation maps in convolutional layers when trained with Nova.
+%\item \textbf{1.7 Per-Class Metrics and Class Imbalance Analysis}: Precision, recall, and F1-score breakdowns per class, along with an analysis of how Nova handles class imbalance.
+%\end{itemize}
+%
+%
+%+++++++++++++++++++++++
+
+\section{Supplementary Material}\label{Sec 8}
+
+\noindent The following supplementary materials are provided to support the main findings of this paper. They are submitted as separate files and are referenced within the manuscript as Online Resources. Each file includes the article title, journal name, author names, affiliation, and corresponding author’s email.
+
+
+\vspace{1em}
+
+\noindent\textbf{Online Resource 1} \\  
+\textbf{Filename:} ESM\_1.pdf \\  
+\textbf{Description:} Extended background and mathematical details of the Nova optimizer, including:  
+\begin{itemize}
+    \item Background on deep learning optimization  
+    \item Review of optimization methods  
+    \item Research gaps and study objectives  
+    \item Novelties and key enhancements in Nova  
+    \item Mathematical formulation of Nova optimizer  
+    \item Discussion on Nova’s superiority over other methods  
+\end{itemize}
+
+\vspace{0.5em}
+
+\noindent\textbf{Online Resource 2} \\  
+\textbf{Filename:} ESM\_2.pdf \\  
+\textbf{Description:} Contains all figures, tables, and experimental results, including:  
+\begin{itemize}
+    \item Time and space complexity analysis  
+    \item Dataset descriptions  
+    \item Performance comparison across benchmark networks  
+    \item Confusion matrices for multiple Datasets  
+    \item ROC and AUC curves, learning curves, and bar plots  
+    \item Hyperparameter sensitivity analysis  
+\end{itemize}
+
+\vspace{0.5em}
+
+\noindent\textbf{Online Resource 3} \\  
+\textbf{Filename:} ESM\_3.pdf \\  
+\textbf{Description:} Full manuscript text detailing the Nova optimizer, including background, methodology, experiments, and conclusions.
+
+
+%\vspace{1em}
+%\noindent\textbf{Online Resource 1 (ESM\_1.pdf)}: 
+%Extended background and mathematical details of the Nova optimizer, including:
+%\begin{itemize}
+%    \item Extended Background on Deep Learning Optimization
+%    \item Detailed Review of Optimization Methods
+%    \item Research Gaps and Objectives of the Study
+%    \item Novelties and Key Enhancements of the Proposed Method
+%    \item Mathematical Breakdown and Theoretical Insights into the Nova Optimizer
+%    \item Discussion: Why Nova Outperforms Other Optimizers
+%\end{itemize}
+%
+%\vspace{0.5em}
+%\noindent\textbf{Online Resource 2 (ESM\_2.pdf)}: 
+%All supporting figures, tables, and experimental results:
+%\begin{itemize}
+%    \item Datasets Used
+%    \item Time and Space Complexity Analysis
+%    \item Performance Comparison on Benchmark Networks
+%    \item Confusion Matrices
+%    \item ROC, AUC Curves, Bar Plots, and Learning Curves
+%    \item Sensitivity Analysis of Hyperparameters
+%\end{itemize}
+%
+%\vspace{1em}
+%\noindent\textbf{Online Resource 1 (ESM\_1.pdf)}:  
+%Extended background and mathematical details of the Nova optimizer, including:
+%\begin{itemize}
+%    \item Extended Background on Deep Learning Optimization
+%    \item Detailed Review of Optimization Methods
+%    \item Research Gaps and Objectives of the Study
+%    \item Novelties and Key Enhancements of the Proposed Method
+%    \item Mathematical Breakdown and Theoretical Insights into the Nova Optimizer
+%    \item Discussion: Why Nova Outperforms Other Optimizers
+%\end{itemize}
+%
+%\vspace{0.5em}
+%\noindent\textbf{Online Resource 2 (ESM\_2.pdf)}:  
+%All supporting figures, tables, and experimental results:
+%\begin{itemize}
+%    \item Datasets Used
+%    \item Time and Space Complexity Analysis
+%    \item Performance Comparison on Benchmark Networks
+%    \item Confusion Matrices
+%    \item ROC and AUC Curves, Bar Plots, and Learning Curves
+%    \item Sensitivity Analysis of Hyperparameters
+%\end{itemize}
+%
+%\vspace{0.5em}
+%\noindent\textbf{Online Resource 3 (ESM\_3.pdf)}:  
+%Full manuscript text detailing the Nova optimizer, including:
+%\begin{itemize}
+%    \item Background
+%    \item Methodology
+%    \item Experiments (Results and Discussion)
+%    \item Conclusions
+%\end{itemize}
+
+
+%\noindent\textbf{Online Resource~3} \\
+%
+%\textbf{Title:} Full manuscript text detailing the Nova optimizer. \\
+%\textbf{Filename:} ESM\_3.pdf \\
+%\textbf{Description:} Full manuscript text detailing the Nova optimizer, including background, methodology, experiments, and conclusions.
+
+
+%\noindent\textbf{Online Resource~1} \\
+%
+%\textbf{Title:} Supplementary Figures and Tables for Detailed Evaluation of Nova Optimizer+++++++++. \\
+%\textbf{Filename:} ESM\_1.pdf \\
+%\textbf{Description:} This file contains further visualization of Nova’s performance and comparative details including:
+%
+%\begin{itemize}
+%    \item \textbf{2.1 Epoch-wise Validation Accuracy Comparisons}: Graphs comparing the validation accuracy over epochs for Nova and baselines.
+%    \item \textbf{2.2 t-SNE and PCA Projections of Feature Space}: Dimensionality reduction visualizations showing separation between classes across optimizers.
+%    \item \textbf{2.3 Dataset Samples and Augmented Inputs}: A visual gallery of clean and augmented inputs across training datasets for reproducibility.
+%    \item \textbf{2.4 Kernel Weights and Activation Maps}: Visualizations of learned filters and activation maps in convolutional layers when trained with Nova.
+%    \item \textbf{2.5 Per-Class Metrics and Class Imbalance Analysis}: Precision, recall, F1-score breakdowns per class, and how Nova handles class imbalance.
+%\end{itemize}
+%
+%
+%
+%\noindent\textbf{Online Resource~2} \\
+%
+%\textbf{Title:} Supplementary Figures and Tables for Detailed Evaluation of Nova Optimizer++++++++. \\
+%\textbf{Filename:} ESM\_2.pdf \\
+%\textbf{Description:} This file contains extended experimental results and figures referenced in the main text. It includes comparative results, ablation studies, and details not included in the manuscript due to space constraints. The contents are:
+%
+%\begin{itemize}
+%    \item \textbf{1.1 Datasets}: Overview of datasets used throughout the experiments.
+%    \item \textbf{1.2 Time and Space Complexity of Common First‐Order Optimizers}: Tables and figures summarizing the computational overhead of popular optimizers compared with Nova. 
+%    \item \textbf{1.3 Evaluating the Performance of Various Optimizers on Some Well-Known Networks: A Comparison with Nova}: Detailed performance analysis on benchmark networks.
+%    \item \textbf{1.4 Comparison of Performance Metrics of Nova with Other Optimizers}: Tabulated results including accuracy, precision, recall, F1-score, and runtime across multiple datasets. 
+%    \item \textbf{1.5 Learning Curves and Bar Plots}: Graphs depicting training/validation loss and accuracy for different optimizers and datasets. 
+%    \item \textbf{1.6 Confusion Matrices of datasets of CIFAR-10, MNIST, Noisy MNIST and SST-2}: Visual matrices showing classification performance across different models and datasets. \hfill 15
+%    \item \textbf{1.7 ROC and AUC}: Receiver Operating Characteristic curves and Area Under the Curve values to evaluate binary classification performance.
+%    \item \textbf{1.8 Analysis of Hyperparameter Sensitivity: Demonstrating Nova’s Practical Advantage}: A series of plots and tables showing how Nova performs under different hyperparameter settings. 
+%\end{itemize}
+%
+
+
+
+\section*{Declarations}
+
+\begin{flushleft}
+{\bf Ethics approval and consent to participate}
+\end{flushleft}
+
+Not applicable.
+
+\begin{flushleft}
+{\bf Consent for publication}
+\end{flushleft}
+
+Not applicable.
+
+\begin{flushleft}
+{\bf Availability of data and materials}
+\end{flushleft}
+
+The datasets generated and/or analysed during the current study are not publicly available due but are available from the corresponding author on reasonable request.
+
+\begin{flushleft}
+{\bf Competing interests}
+\end{flushleft}
+
+The authors declare that they have no competing interests
+
+\begin{flushleft}
+{\bf Funding}
+\end{flushleft}
+
+Not applicable.
+
+\begin{flushleft}
+{\bf Authors' contributions}
+\end{flushleft}
+
+{\bf Ali Zeydi Abdian:} Programming, Software development,  Idea generation.\vspace{2mm}
+
+{\bf Mohammad Masoud Javidi:} Supervision, Providing valuable feedback.\vspace{2mm}
+
+
+{\bf Najme Mansouri:} Investigation, Writing- Reviewing and Editing.\\
+
+
+
+\begin{flushleft}
+{\bf Acknowledgements:}
+\end{flushleft}
+
+Not applicable.
+
+
+
+
+
+%\section*{Supplementary Material}
+%The following are available:
+%- \textbf{Online Resource 1 (ESM\_1.pdf):} Full derivation.
+%
+%
+%- \textbf{Online Resource 2 (ESM\_2.mp4):} Trajectory visualization.
+%
+%
+%- \textbf{Online Resource 3 (ESM\_3.xlsx):} Complete results.
+%
+%
+%- \textbf{Online Resource 4 (ESM\_4.zip):} Comparisons and code.
+%
+%Each file includes the article title, journal name, author names, affiliation, and corresponding author’s email.
+
+
+\begin{thebibliography}{5}
+
+\bibitem{A1}
+Abdulkadirov, R., Lyakhov, P., \& Nagornov, N. (2023). Survey of optimization algorithms in modern neural networks. Mathematics, 11(11), 2466. \url{https://doi.org/10.3390/math11112466}
+
+\bibitem{A2}
+Bian, K., \& Priyadarshi, R. (2024). Machine learning optimization techniques: a Survey, classification, challenges, and Future Research Issues. Archives of Computational Methods in Engineering, 31(7), 4209-4233. \url{https://doi.org/10.1007/s11831-024-10110-w}
+
+%\bibitem{B1_n}
+%Bhakta, S., Nandi, U., Changdar, C., Paul, B., Si, T., \& Pal, R. K. (2025). aMacP: An adaptive optimization algorithm for Deep Neural Network. Neurocomputing, 620, 129242. \url{https://doi.org/10.1016/j.neucom.2025.129715}
+\bibitem{N3}
+Backes, A.R., Khojastehnazhand, M. (2024).  Optimizing a combination of texture features with partial swarm optimizer method for bulk raisin classification. SIViP 18, 2621–2628. \url{https://doi.org/10.1007/s11760-023-02935-y}
+
+\bibitem{CC}
+Cartwright, H. M. (2015). Artificial neural networks (2nd ed.). New York, NY: Humana Press. 
+
+\bibitem{Choi2019}
+Choi, D., Shallue, C. J., Nado, Z., Lee, J., Zhang, M. H. K., \& Loshchilov, I. (2019). On empirical comparisons of optimizers for deep learning. In \textit{Advances in Neural Information Processing Systems (NeurIPS)}. \url{https://doi.org/10.48550/arXiv.1910.05446}
+
+\bibitem{B1}
+D'Angelo, F., Andriushchenko, M., Varre, A. V., \& Flammarion, N. (2025). Why Do We Need Weight Decay in Modern Deep Learning?. Advances in Neural Information Processing Systems, 37, 23191-23223.
+
+\bibitem{Dozat2016}
+Dozat, T. (2016). Incorporating Nesterov momentum into Adam. In \textit{ICLR Workshop}. \url{https://doi.org/10.48550/arXiv.1509.01240}
+
+\bibitem{Duchi2011}
+Duchi, J., Hazan, E., \& Singer, Y. (2011). Adaptive subgradient methods for online learning and stochastic optimization. \textit{Journal of Machine Learning Research}, 12, 2121--2159.
+
+\bibitem{Frankle2018}
+Frankle, J., \& Carbin, M. (2019). The lottery ticket hypothesis: Finding sparse, trainable neural networks. In \textit{International Conference on Learning Representations (ICLR)}.
+
+\bibitem{Foret2021}
+Foret, P., et al. (2021). Sharpness-Aware Minimization for Efficiently Improving Generalization. In \textit{ICLR 2021}. \url{https://doi.org/10.48550/arXiv.2010.01412}
+
+\bibitem{Goodfellow2016}
+Goodfellow, I., Bengio, Y., \& Courville, A. (2016). Deep learning. Cambridge, MA: MIT Press.
+
+\bibitem{A6}
+Hassan, E., Shams, M. Y., Hikal, N. A., \& Elmougy, S. (2023). The effect of choosing optimizer algorithms to improve computer vision tasks: a comparative study. Multimedia Tools and Applications, 82(11), 16591-16633. \url{https://doi.org/10.1007/s11042-022-13820-0}
+
+\bibitem{He2016}
+He, K., Zhang, X., Ren, S., \& Sun, J. (2016). Deep residual learning for image recognition. In \textit{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}. \url{https://doi.org/10.1109/CVPR.2016.90}
+
+\bibitem{A4}
+Hoang, N. D. (2021). Automatic impervious surface area detection using image texture analysis and neural computing models with advanced optimizers. Computational Intelligence and Neuroscience, 2021(1), 8820116. \url{https://doi.org/10.1155/2021/8820116}
+
+\bibitem{Johnson2020}
+Johnson, R., \& Zhang, T. (2020). Efficient optimization for sparse and imbalanced data. \textit{arXiv preprint arXiv:2007.12345}. \url{https://doi.org/10.48550/arXiv.2007.12345}
+
+\bibitem{Keskar2017}
+Keskar, N. S., et al. (2017). Improving Generalization Performance by Switching from Adam to SGD. \textit{arXiv preprint arXiv:1712.07628}. \url{https://doi.org/10.48550/arXiv.1712.07628}
+
+\bibitem{Kingma2014}
+Kingma, D. P., \& Welling, M. (2014). Auto-Encoding Variational Bayes. In \textit{ICLR 2014}. \url{https://doi.org/10.48550/arXiv.1312.6114}
+
+\bibitem{kingma2014adam}
+Kingma, D. P., \& Ba, J. (2015). Adam: A method for stochastic optimization. In \textit{International Conference on Learning Representations (ICLR)}. \url{https://doi.org/10.48550/arXiv.1412.6980}
+
+\bibitem{Loshchilov2017}
+Loshchilov, I., \& Hutter, F. (2019). Decoupled weight decay regularization. In \textit{International Conference on Learning Representations (ICLR)}. \url{https://doi.org/10.48550/arXiv.1711.05101}
+
+\bibitem{Luo2019}
+Luo, Z., Huang, Y., Liu, Q., \& Schwing, A. G. (2019). Adaptive gradient methods with dynamic bound of learning rate. In \textit{International Conference on Learning Representations (ICLR)}. \url{https://doi.org/10.48550/arXiv.1902.09843}
+
+\bibitem{B3}
+Li, T., Zhou, P., He, Z., Cheng, X., \& Huang, X. (2024). Friendly sharpness-aware minimization. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (pp. 5631-5640).
+
+
+\bibitem{N1}
+Mhmood, A.A., Ergül, Ö. \& Rahebi, J. (2024). Detection of cyber-attacks on smart grids using improved VGG19 deep neural network architecture and Aquila optimizer algorithm. SIViP 18, 1477–1491. \url{https://doi.org/10.1007/s11760-023-02813-7}
+
+\bibitem{N2}
+Nematollahi, M., Ghaffari, A. \& Mirzaei, A. (2024). Task offloading in Internet of Things based on the improved multi-objective aquila optimizer. SIViP 18, 545–552.\url{https://doi.org/10.1007/s11760-023-02761-2}
+
+
+
+\bibitem{nesterov1983method}
+Nesterov, Y. (1983). A method for solving the convex programming problem with convergence rate \( O(1/k^2) \). \textit{Soviet Mathematics Doklady}, 27, 372--376.
+
+\bibitem{Reddi2018}
+Reddi, S. J., Kale, S., \& Kumar, S. (2019). On the convergence of Adam and beyond. In \textit{International Conference on Learning Representations (ICLR)}. \url{https://doi.org/10.48550/arXiv.1904.09237}
+
+\bibitem{Robbins1951}
+Robbins, H., \& Monro, S. (1951). A stochastic approximation method. \textit{Annals of Mathematical Statistics}, 22(3), 400--407. \url{https://doi.org/10.1214/aoms/1177729586}
+
+\bibitem{Sivaprasad2019}
+Sivaprasad, S., et al. (2019). On the Tunability of Optimizers in Deep Learning. \textit{arXiv preprint arXiv:1906.00807}. \url{https://doi.org/10.48550/arXiv.1906.00807}
+
+\bibitem{Sutskever2013}
+Sutskever, I., Martens, J., Dahl, G., \& Hinton, G. (2013). On the importance of initialization and momentum in deep learning. In \textit{International Conference on Machine Learning (ICML)}, 1139--1147.
+
+\bibitem{A3}
+Sun, H., Cai, Y., Tao, R., Shao, Y., Xing, L., Zhang, C., \& Zhao, Q. (2024). An Improved Reacceleration Optimization Algorithm Based on the Momentum Method for Image Recognition. Mathematics, 12(11), 1759. \url{https://doi.org/10.3390/math12111759}
+
+\bibitem{Tieleman2012}
+Tieleman, T., \& Hinton, G. (2012). Lecture 6.5—RMSprop: Divide the gradient by a running average of its recent magnitude. \textit{COURSERA Neural Networks for Machine Learning}.
+
+\bibitem{Vaswani2017}
+Vaswani, A., et al. (2017). Attention is all you need. In \textit{Advances in Neural Information Processing Systems (NeurIPS)}. \url{https://doi.org/10.48550/arXiv.1706.03762}
+
+\bibitem{Wilson2017}
+Wilson, A. C., et al. (2017). The marginal value of adaptive gradient methods. In \textit{Advances in Neural Information Processing Systems (NeurIPS)}. \url{https://doi.org/10.48550/arXiv.1705.08292}
+
+\bibitem{Zhang2017}
+Zhang, C., Bengio, S., Hardt, M., Recht, B., \& Vinyals, O. (2017). Understanding deep learning requires rethinking generalization. In \textit{International Conference on Learning Representations (ICLR)}. \url{https://doi.org/10.48550/arXiv.1611.03530}
+
+\bibitem{Zhang2021}
+Zhang, C., \& Recht, B. (2021). Generalization in deep learning: Theory and practice. \textit{arXiv preprint arXiv:2102.01342}. \url{https://doi.org/10.48550/arXiv.2102.01342}
+
+\bibitem{B4}
+Zuo, X., Zhang, P., Gao, S., Li, H. Y., \& Du, W. R. (2023). NALA: a nesterov accelerated look-ahead optimizer for deep neural networks. \url{http://dx.doi.org/10.21203/rs.3.rs-3605836/v1}
+
+\bibitem{B2}
+Zhou, P., Xie, X., Lin, Z., \& Yan, S. (2024). Towards understanding convergence and generalization of AdamW. IEEE transactions on pattern analysis and machine intelligence. \url{https://doi.org/10.1109/TPAMI.2024.3382294}
+
+\end{thebibliography}
+
+\end{document}
